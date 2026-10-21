@@ -1,0 +1,31 @@
+name: Import complete current portfolio
+on:
+  push:
+    branches: ["migration/complete-elfie-site"]
+    paths: [".migration/import_site.py", ".github/workflows/import-complete.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/complete-elfie-site
+      - name: Copy every referenced page and asset from the current Site
+        run: python3 .migration/import_site.py
+      - name: Check browser JavaScript syntax
+        run: |
+          node --check app.mjs
+          node --check projects.mjs
+      - name: Save the complete candidate on the migration branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Import full portfolio with all pages, original media, styles and interactions"
+            git push origin HEAD:migration/complete-elfie-site
+          fi
