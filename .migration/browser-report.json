@@ -1,0 +1,187 @@
+{
+  "pages": [
+    {
+      "path": "a-propos.html",
+      "content_identical": true,
+      "title": "À propos — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "index.html",
+      "content_identical": true,
+      "title": "Elfie.Z — Portfolio · Communication, design & web"
+    },
+    {
+      "path": "parcours.html",
+      "content_identical": true,
+      "title": "Mon parcours — Elfie.Z · Portfolio"
+    },
+    {
+      "path": "projets.html",
+      "content_identical": true,
+      "title": "Mes projets — Elfie.Z · Portfolio"
+    },
+    {
+      "path": "projets/becomtech.html",
+      "content_identical": true,
+      "title": "BECOMTECH — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/campagnes-conceptuelles.html",
+      "content_identical": true,
+      "title": "Campagnes conceptuelles — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/cauvaillac.html",
+      "content_identical": true,
+      "title": "Cauvaillac-sur-Garonne — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/elles-bougent.html",
+      "content_identical": true,
+      "title": "Elles bougent — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/happy-learning.html",
+      "content_identical": true,
+      "title": "Happy Learning — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/licorne-party.html",
+      "content_identical": true,
+      "title": "LicornParty — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/moina-accessoires.html",
+      "content_identical": true,
+      "title": "Moina Accessoires — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/nextstep.html",
+      "content_identical": true,
+      "title": "NextStep — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/paris8-communication.html",
+      "content_identical": true,
+      "title": "Université Paris 8 — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/penzi.html",
+      "content_identical": true,
+      "title": "Penzi — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/wonderball.html",
+      "content_identical": true,
+      "title": "Wonderball — Elfie Zoungrana · Portfolio"
+    },
+    {
+      "path": "projets/zero-waste.html",
+      "content_identical": true,
+      "title": "Zero Waste Paris — Elfie Zoungrana · Portfolio"
+    }
+  ],
+  "visual_checks": [
+    {
+      "case": "home-desktop",
+      "source_size": [
+        1440,
+        3929
+      ],
+      "changed_pixel_ratio": 0.0,
+      "passed": true
+    },
+    {
+      "case": "projects-desktop",
+      "source_size": [
+        1440,
+        4345
+      ],
+      "changed_pixel_ratio": 0.0003327579593402378,
+      "passed": true
+    },
+    {
+      "case": "project-desktop",
+      "source_size": [
+        1440,
+        9612
+      ],
+      "changed_pixel_ratio": 0.0,
+      "passed": true
+    },
+    {
+      "case": "home-mobile",
+      "source_size": [
+        390,
+        5559
+      ],
+      "changed_pixel_ratio": 0.0,
+      "passed": true
+    },
+    {
+      "case": "project-mobile",
+      "source_size": [
+        390,
+        6221
+      ],
+      "changed_pixel_ratio": 1.4013741710253525e-05,
+      "passed": true
+    }
+  ],
+  "interaction_checks": [
+    {
+      "name": "All imported files match their recorded hashes; binary media are byte identical",
+      "passed": true
+    },
+    {
+      "name": "All 12 projects render after JavaScript initialization",
+      "passed": true
+    },
+    {
+      "name": "Category filters work",
+      "passed": true
+    },
+    {
+      "name": "Search finds the selected project",
+      "passed": true
+    },
+    {
+      "name": "Empty search and reset work",
+      "passed": true
+    },
+    {
+      "name": "Day/night mode persists after reload",
+      "passed": true
+    },
+    {
+      "name": "Interactive home folders retain the repository base",
+      "passed": true
+    },
+    {
+      "name": "Random-project navigation stays inside the portfolio",
+      "passed": true
+    },
+    {
+      "name": "Legacy project hash links still work",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu opens and closes with Escape",
+      "passed": true
+    },
+    {
+      "name": "The video loads and exposes a playable duration",
+      "passed": true
+    },
+    {
+      "name": "Rendered internal links retain the GitHub Pages subdirectory",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors or failed internal resources",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
