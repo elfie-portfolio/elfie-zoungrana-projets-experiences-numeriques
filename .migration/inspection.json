@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/",
+    "path": ".migration/published/index.html",
+    "bytes": 19701,
+    "content_type": "text/html",
+    "final_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/"
+  },
+  {
+    "url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/styles.css",
+    "path": ".migration/published/styles.css",
+    "bytes": 40149,
+    "content_type": "text/css",
+    "final_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/styles.css"
+  },
+  {
+    "url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/pages.css",
+    "path": ".migration/published/pages.css",
+    "bytes": 6117,
+    "content_type": "text/css",
+    "final_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/pages.css"
+  },
+  {
+    "url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/portfolio.css",
+    "path": ".migration/published/portfolio.css",
+    "bytes": 42816,
+    "content_type": "text/css",
+    "final_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/portfolio.css"
+  },
+  {
+    "url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/app.mjs",
+    "path": ".migration/published/app.mjs",
+    "bytes": 24096,
+    "content_type": "text/javascript",
+    "final_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/app.mjs"
+  }
+]
