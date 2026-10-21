@@ -1,0 +1,62 @@
+name: Retrieve exact published Site archive
+on:
+  push:
+    branches: ["migration/canonical-source"]
+    paths: [".github/workflows/canonical-source.yml"]
+permissions:
+  contents: write
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/canonical-source
+      - name: Read the original Git source without storing credentials
+        env:
+          GIT_TERMINAL_PROMPT: 0
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, shutil, subprocess, tempfile
+          root = pathlib.Path(tempfile.mkdtemp(prefix="elfie-original-"))
+          remote = "https://git.chatgpt-team.site/1df2d220-a45d-4e02-a61e-899b3e9c9c71/appgprj_6ad63d0da22c81918b1ca8dba454f6af.git"
+          sha = "d3612094233d4863da9ec3cfa3d4c984b77ef648"
+          report_path = pathlib.Path(".migration/canonical-source.json")
+          report_path.parent.mkdir(parents=True, exist_ok=True)
+          try:
+              subprocess.run(["git", "clone", "--no-checkout", remote, str(root / "source")], check=True, timeout=120, capture_output=True)
+              source = root / "source"
+              subprocess.run(["git", "-C", str(source), "checkout", "--detach", sha], check=True, timeout=60, capture_output=True)
+              actual = subprocess.check_output(["git", "-C", str(source), "rev-parse", "HEAD"], text=True).strip()
+              assert actual == sha
+              manifest = json.loads((source / ".openai/hosting.json").read_text())
+              directory = manifest.get("static", {}).get("directory")
+              if not directory:
+                  raise RuntimeError("The source does not declare a static export directory")
+              static = (source / directory).resolve()
+              assert static.is_relative_to(source.resolve())
+              assert (static / "index.html").is_file()
+              destination = pathlib.Path(".migration/canonical-static")
+              shutil.copytree(static, destination, dirs_exist_ok=True)
+              files = [{"path": str(path.relative_to(static)), "bytes": path.stat().st_size,
+                        "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+                       for path in sorted(static.rglob("*")) if path.is_file()]
+              report = {"available": True, "commit": actual, "static_directory": directory,
+                        "files": files, "file_count": len(files), "total_bytes": sum(item["bytes"] for item in files)}
+          except Exception as exc:
+              report = {"available": False, "error": str(exc)}
+              if isinstance(exc, subprocess.CalledProcessError):
+                  report["error_detail"] = exc.stderr.decode(errors="replace")[:1500] if isinstance(exc.stderr, bytes) else str(exc.stderr)[:1500]
+          report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+          print(json.dumps({k:v for k,v in report.items() if k != "files"}, ensure_ascii=False, indent=2))
+          PY
+      - name: Save canonical source inventory
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .migration
+          if ! git diff --cached --quiet; then
+            git commit -m "Retrieve exact published Site files for complete source verification"
+            git push origin HEAD:migration/canonical-source
+          fi
