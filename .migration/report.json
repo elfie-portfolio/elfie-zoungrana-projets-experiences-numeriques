@@ -1,0 +1,1005 @@
+{
+  "source_site": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/",
+  "source_site_version": 15,
+  "source_site_commit": "d3612094233d4863da9ec3cfa3d4c984b77ef648",
+  "destination": "https://elfie-portfolio.github.io/elfie-zoungrana-projets-experiences-numeriques/",
+  "file_count": 94,
+  "source_bytes": 27069646,
+  "output_bytes": 27101240,
+  "counts_by_extension": {
+    ".css": 3,
+    ".html": 16,
+    ".mjs": 2,
+    ".mp4": 1,
+    ".otf": 4,
+    ".pdf": 5,
+    ".svg": 1,
+    ".webp": 62
+  },
+  "pages": [
+    "a-propos.html",
+    "index.html",
+    "parcours.html",
+    "projets.html",
+    "projets/becomtech.html",
+    "projets/campagnes-conceptuelles.html",
+    "projets/cauvaillac.html",
+    "projets/elles-bougent.html",
+    "projets/happy-learning.html",
+    "projets/licorne-party.html",
+    "projets/moina-accessoires.html",
+    "projets/nextstep.html",
+    "projets/paris8-communication.html",
+    "projets/penzi.html",
+    "projets/wonderball.html",
+    "projets/zero-waste.html"
+  ],
+  "adaptations": [
+    "Prefix internal absolute URL paths with the GitHub Pages repository base.",
+    "Update canonical portfolio URLs and copied links to GitHub Pages.",
+    "Remove only the invisible Cloudflare challenge injected by the old host.",
+    "Disable Jekyll so all static files and assets are served unchanged."
+  ],
+  "resources": [
+    {
+      "path": "a-propos.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/a-propos.html",
+      "content_type": "text/html",
+      "source_bytes": 11093,
+      "output_bytes": 11969,
+      "source_sha256": "df5b6b5fbcb7447c1f5a8d940480ff517cf920fd4db8465b03c85f88d793ae43",
+      "output_sha256": "f6f1f7722d1b34a17d612960961c7965486e237581826b2b856d30419084bab2",
+      "byte_identical": false
+    },
+    {
+      "path": "app.mjs",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/app.mjs",
+      "content_type": "text/javascript",
+      "source_bytes": 24096,
+      "output_bytes": 24989,
+      "source_sha256": "3c8738dfff0738d29ce5921efd46fa3e3325119f2af4f5b334752240c2f53924",
+      "output_sha256": "c80a9475ebe6d6dc081dc3db55e9fa081bf0d7306b3b8b93769194851a5086e9",
+      "byte_identical": false
+    },
+    {
+      "path": "assets/cauvaillac/administration.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/cauvaillac/administration.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 403768,
+      "output_bytes": 403768,
+      "source_sha256": "105a592b740bcdc0b464657c884e69a8ad8ad770dcdcc02c48759438b35bc154",
+      "output_sha256": "105a592b740bcdc0b464657c884e69a8ad8ad770dcdcc02c48759438b35bc154",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/cauvaillac/culture.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/cauvaillac/culture.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 396082,
+      "output_bytes": 396082,
+      "source_sha256": "40b85e6f6ba49eb44e1cde61aa247b5e7d5aee8267fa91ee234f638b022c2739",
+      "output_sha256": "40b85e6f6ba49eb44e1cde61aa247b5e7d5aee8267fa91ee234f638b022c2739",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/cauvaillac/engagements.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/cauvaillac/engagements.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 483426,
+      "output_bytes": 483426,
+      "source_sha256": "939ec2cf0f1ff9c596510e47373306c961b3a91f8d76c5ab6e783b4b65b74e9b",
+      "output_sha256": "939ec2cf0f1ff9c596510e47373306c961b3a91f8d76c5ab6e783b4b65b74e9b",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/cauvaillac/home.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/cauvaillac/home.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 587108,
+      "output_bytes": 587108,
+      "source_sha256": "8cef9fa2040df9909a12acdbcf36d15e422c78cf0fa271ac5fa41dd307c48afe",
+      "output_sha256": "8cef9fa2040df9909a12acdbcf36d15e422c78cf0fa271ac5fa41dd307c48afe",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/cauvaillac/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/cauvaillac/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 190770,
+      "output_bytes": 190770,
+      "source_sha256": "d17a98707010fe341129a46351301a2bb668c31ee0904be6062c88b052c0a180",
+      "output_sha256": "d17a98707010fe341129a46351301a2bb668c31ee0904be6062c88b052c0a180",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/docs/happy-learning-presentation.pdf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/docs/happy-learning-presentation.pdf",
+      "content_type": "application/pdf",
+      "source_bytes": 5881995,
+      "output_bytes": 5881995,
+      "source_sha256": "41d7c04d05ec51b8121acd33683e77fb3b36a66c9204cf58d1a8d3cab400fece",
+      "output_sha256": "41d7c04d05ec51b8121acd33683e77fb3b36a66c9204cf58d1a8d3cab400fece",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/docs/innovatech-affiche-idf-2026.pdf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/docs/innovatech-affiche-idf-2026.pdf",
+      "content_type": "application/pdf",
+      "source_bytes": 1524860,
+      "output_bytes": 1524860,
+      "source_sha256": "62b3a0bd3239cda02617234133b3e0e8245268137a7025fb40b932aacce164b0",
+      "output_sha256": "62b3a0bd3239cda02617234133b3e0e8245268137a7025fb40b932aacce164b0",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/docs/innovatech-presentation-challenge.pdf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/docs/innovatech-presentation-challenge.pdf",
+      "content_type": "application/pdf",
+      "source_bytes": 389039,
+      "output_bytes": 389039,
+      "source_sha256": "b981c4aa7becebae92afddf0a2370a6ff4736ede002723822613ed209405b226",
+      "output_sha256": "b981c4aa7becebae92afddf0a2370a6ff4736ede002723822613ed209405b226",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/docs/innovatech-prix-regional-idf-2026.pdf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/docs/innovatech-prix-regional-idf-2026.pdf",
+      "content_type": "application/pdf",
+      "source_bytes": 1801419,
+      "output_bytes": 1801419,
+      "source_sha256": "3cc248db2264cb497e95d733f3f0998c72cc93192a8eda817b10834596865058",
+      "output_sha256": "3cc248db2264cb497e95d733f3f0998c72cc93192a8eda817b10834596865058",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/docs/paris8-intra8.pdf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/docs/paris8-intra8.pdf",
+      "content_type": "application/pdf",
+      "source_bytes": 3688899,
+      "output_bytes": 3688899,
+      "source_sha256": "bfd3cd9552a26cf5a45f716b99ea6edb4332e69d3beaf75c613f1b9beee4f7ab",
+      "output_sha256": "bfd3cd9552a26cf5a45f716b99ea6edb4332e69d3beaf75c613f1b9beee4f7ab",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/favicon.svg",
+      "content_type": "image/svg+xml",
+      "source_bytes": 228,
+      "output_bytes": 369,
+      "source_sha256": "5e9c1f89510b03d443b16fe35f038141ad426b22e86cd822832353454eaedf99",
+      "output_sha256": "f2ca75881a9dafef52e9a021798c540927ca8da9b0c4f0825b621847b79de91b",
+      "byte_identical": false
+    },
+    {
+      "path": "assets/fonts/mono.otf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/fonts/mono.otf",
+      "content_type": "application/octet-stream",
+      "source_bytes": 77936,
+      "output_bytes": 77936,
+      "source_sha256": "4f225ca8e13acb16f733ce741693105e527d5f7a5443901b9ecc190fca4e149b",
+      "output_sha256": "4f225ca8e13acb16f733ce741693105e527d5f7a5443901b9ecc190fca4e149b",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/fonts/sans-bold.otf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/fonts/sans-bold.otf",
+      "content_type": "application/octet-stream",
+      "source_bytes": 83264,
+      "output_bytes": 83264,
+      "source_sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+      "output_sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/fonts/sans-regular.otf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/fonts/sans-regular.otf",
+      "content_type": "application/octet-stream",
+      "source_bytes": 82264,
+      "output_bytes": 82264,
+      "source_sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "output_sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/fonts/serif-italic.otf",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/fonts/serif-italic.otf",
+      "content_type": "application/octet-stream",
+      "source_bytes": 105684,
+      "output_bytes": 105684,
+      "source_sha256": "b7c424e6cb79baddfcdcd9a9d87f9fc4fdd06f0e5160066e2b2e47bcd647c7b9",
+      "output_sha256": "b7c424e6cb79baddfcdcd9a9d87f9fc4fdd06f0e5160066e2b2e47bcd647c7b9",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/concept-maquette.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/concept-maquette.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 53340,
+      "output_bytes": 53340,
+      "source_sha256": "f687de93cac8ccb2e54a5238909e91c59aa4c1c27141085ef87a3cbfc2fa7f6b",
+      "output_sha256": "f687de93cac8ccb2e54a5238909e91c59aa4c1c27141085ef87a3cbfc2fa7f6b",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/future.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/future.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 25512,
+      "output_bytes": 25512,
+      "source_sha256": "c7249ee04aebbf774ea27c046216ac3c666dedf4e1457b712e96d43769bebf47",
+      "output_sha256": "c7249ee04aebbf774ea27c046216ac3c666dedf4e1457b712e96d43769bebf47",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/learn.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/learn.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 28716,
+      "output_bytes": 28716,
+      "source_sha256": "008c88e480145ba6a646350d6d356f63e3b034ed6b014e2cebdb68eb7c65bc89",
+      "output_sha256": "008c88e480145ba6a646350d6d356f63e3b034ed6b014e2cebdb68eb7c65bc89",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/prix-regional.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/prix-regional.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 243994,
+      "output_bytes": 243994,
+      "source_sha256": "602f0dffd5a121b11dd3878f63a6d94ca384270d1e009af5c1fc9e258d74c50f",
+      "output_sha256": "602f0dffd5a121b11dd3878f63a6d94ca384270d1e009af5c1fc9e258d74c50f",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 23598,
+      "output_bytes": 23598,
+      "source_sha256": "51d5403e1bc61a8aa25a1c0922a6f9845899032209aa54bbe394ce9af222d707",
+      "output_sha256": "51d5403e1bc61a8aa25a1c0922a6f9845899032209aa54bbe394ce9af222d707",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/happy-learning/wellbeing.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/happy-learning/wellbeing.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 29478,
+      "output_bytes": 29478,
+      "source_sha256": "8567591c2003f7b93e9c2174fe0a04497b15aaf2229e32e66c2f60181e6e1077",
+      "output_sha256": "8567591c2003f7b93e9c2174fe0a04497b15aaf2229e32e66c2f60181e6e1077",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/licornparty/cart.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/licornparty/cart.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 21764,
+      "output_bytes": 21764,
+      "source_sha256": "20ce43fed6412c1648745ef77ad599dd51473f0a3e1a8ea47e33088a03b4f080",
+      "output_sha256": "20ce43fed6412c1648745ef77ad599dd51473f0a3e1a8ea47e33088a03b4f080",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/licornparty/categories.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/licornparty/categories.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 23538,
+      "output_bytes": 23538,
+      "source_sha256": "dc4a66162eeb1dc5193aacebc9f53b0ec5fc695711885cf1e6ee9a2afab081fb",
+      "output_sha256": "dc4a66162eeb1dc5193aacebc9f53b0ec5fc695711885cf1e6ee9a2afab081fb",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/licornparty/checkout.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/licornparty/checkout.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 30700,
+      "output_bytes": 30700,
+      "source_sha256": "2557e331f3b17bce604f6a7f1931d6526ae5510336a5496cc6d2adfea3cc6afb",
+      "output_sha256": "2557e331f3b17bce604f6a7f1931d6526ae5510336a5496cc6d2adfea3cc6afb",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/licornparty/product.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/licornparty/product.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 24784,
+      "output_bytes": 24784,
+      "source_sha256": "ccac69ddb48a3f63464f99bb4c2331e60484d87959ecf7189421d8a6b83caa96",
+      "output_sha256": "ccac69ddb48a3f63464f99bb4c2331e60484d87959ecf7189421d8a6b83caa96",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/licornparty/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/licornparty/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 26072,
+      "output_bytes": 26072,
+      "source_sha256": "6d2763f0bfaf86ab26c38c2711af87fb1032601915b990480c792d495c722aca",
+      "output_sha256": "6d2763f0bfaf86ab26c38c2711af87fb1032601915b990480c792d495c722aca",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/audi-apercu.mp4",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/audi-apercu.mp4",
+      "content_type": "video/mp4",
+      "source_bytes": 2902587,
+      "output_bytes": 2902587,
+      "source_sha256": "9ac700e62457e3217d51f202853053837f5751de54de716c5c8fe323271523ff",
+      "output_sha256": "9ac700e62457e3217d51f202853053837f5751de54de716c5c8fe323271523ff",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/audi-collage.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/audi-collage.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 70208,
+      "output_bytes": 70208,
+      "source_sha256": "ec07d909fe62cba21cf2b9c9c3d82ded3b034a540990759228cc35d60d78b5e1",
+      "output_sha256": "ec07d909fe62cba21cf2b9c9c3d82ded3b034a540990759228cc35d60d78b5e1",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/audi-poster.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/audi-poster.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 82590,
+      "output_bytes": 82590,
+      "source_sha256": "015bb326b4a69d45158e6fa54576e4e49393002ccee9824aacebfdb0c55f9089",
+      "output_sha256": "015bb326b4a69d45158e6fa54576e4e49393002ccee9824aacebfdb0c55f9089",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/audi-rs3.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/audi-rs3.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 47878,
+      "output_bytes": 47878,
+      "source_sha256": "0d7e20d27708bd21001dd606dffa467adc1b46973ff8dd1c39336dade07c2693",
+      "output_sha256": "0d7e20d27708bd21001dd606dffa467adc1b46973ff8dd1c39336dade07c2693",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/audi-typographie.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/audi-typographie.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 81848,
+      "output_bytes": 81848,
+      "source_sha256": "e8575f6c186607e0215c87ebc8ae8b0f7f66f4535a65c6cd91def2fddc21ecef",
+      "output_sha256": "e8575f6c186607e0215c87ebc8ae8b0f7f66f4535a65c6cd91def2fddc21ecef",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/nike-dunk.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/nike-dunk.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 395772,
+      "output_bytes": 395772,
+      "source_sha256": "83c74f3bf543c27da036c36d6ad970975f5fcf2f8daff7f13ed164eb09e60d61",
+      "output_sha256": "83c74f3bf543c27da036c36d6ad970975f5fcf2f8daff7f13ed164eb09e60d61",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/nike-jordan.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/nike-jordan.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 772092,
+      "output_bytes": 772092,
+      "source_sha256": "ab8106f6fd3d75875d7488bf8eec385b56e29d2993b3228d96a3c6e082fca734",
+      "output_sha256": "ab8106f6fd3d75875d7488bf8eec385b56e29d2993b3228d96a3c6e082fca734",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/marques/nike-tn.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/marques/nike-tn.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 140590,
+      "output_bytes": 140590,
+      "source_sha256": "96b4ab25176adadf533ebb8f9bf2dfa6a1ec1102625b70bddf8e4fa3c4b4322c",
+      "output_sha256": "96b4ab25176adadf533ebb8f9bf2dfa6a1ec1102625b70bddf8e4fa3c4b4322c",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/about.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/about.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 173580,
+      "output_bytes": 173580,
+      "source_sha256": "32be8669ebc43f6093b3556e6abaec8ec6d103cd2d37a72610e65df03321080b",
+      "output_sha256": "32be8669ebc43f6093b3556e6abaec8ec6d103cd2d37a72610e65df03321080b",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/create.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/create.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 74546,
+      "output_bytes": 74546,
+      "source_sha256": "433fc10fb1ea4e11ad2bfe1ea209a0939d81b708ba2d0ff332bf199ebfbba41a",
+      "output_sha256": "433fc10fb1ea4e11ad2bfe1ea209a0939d81b708ba2d0ff332bf199ebfbba41a",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/home.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/home.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 217302,
+      "output_bytes": 217302,
+      "source_sha256": "f2da3d28131a223f0c9d6231fe40919bf8993c59c466ba31bdaec22ff4c267a8",
+      "output_sha256": "f2da3d28131a223f0c9d6231fe40919bf8993c59c466ba31bdaec22ff4c267a8",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/product-photo.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/product-photo.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 27912,
+      "output_bytes": 27912,
+      "source_sha256": "814aa00c9f3cd423aec35a7bf9004b834e9991cc62a14d0acd88c618ccd2dafc",
+      "output_sha256": "814aa00c9f3cd423aec35a7bf9004b834e9991cc62a14d0acd88c618ccd2dafc",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/products.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/products.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 514402,
+      "output_bytes": 514402,
+      "source_sha256": "60386b51c11ccdd66b4c999c7a65c779bf1db62f641d1a419dc0efa19daadc2c",
+      "output_sha256": "60386b51c11ccdd66b4c999c7a65c779bf1db62f641d1a419dc0efa19daadc2c",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/moina/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/moina/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 57850,
+      "output_bytes": 57850,
+      "source_sha256": "89e233562607e02d826da578073462414f8f42eaa9e7a426d7743b60a24382da",
+      "output_sha256": "89e233562607e02d826da578073462414f8f42eaa9e7a426d7743b60a24382da",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/nextstep/dashboard.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/nextstep/dashboard.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 27536,
+      "output_bytes": 27536,
+      "source_sha256": "c66a907bc1e5575e8cda098231f27d4648f9e35576500a72d1bcf29a3ce7983a",
+      "output_sha256": "c66a907bc1e5575e8cda098231f27d4648f9e35576500a72d1bcf29a3ce7983a",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/nextstep/mentors.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/nextstep/mentors.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 35220,
+      "output_bytes": 35220,
+      "source_sha256": "79467b571c11e34de823a67f6cff1193ec2fb61db839f608c986bbd4d79fbb0a",
+      "output_sha256": "79467b571c11e34de823a67f6cff1193ec2fb61db839f608c986bbd4d79fbb0a",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/nextstep/network.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/nextstep/network.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 38272,
+      "output_bytes": 38272,
+      "source_sha256": "9c6dad2d1e10dbc9aa096631e904c7c7a2d5347a1d51de58978e65088ff78f8d",
+      "output_sha256": "9c6dad2d1e10dbc9aa096631e904c7c7a2d5347a1d51de58978e65088ff78f8d",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/nextstep/resources.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/nextstep/resources.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 37196,
+      "output_bytes": 37196,
+      "source_sha256": "1ef1c5d8ff1aa37e5d367a59f7db98ad6ee80c62d87dfb573c3863729c5af49d",
+      "output_sha256": "1ef1c5d8ff1aa37e5d367a59f7db98ad6ee80c62d87dfb573c3863729c5af49d",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/nextstep/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/nextstep/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 26086,
+      "output_bytes": 26086,
+      "source_sha256": "6dbddf25fbde674d4f98dc803d531226acd3d9ef192531121faa3bf2088002a5",
+      "output_sha256": "6dbddf25fbde674d4f98dc803d531226acd3d9ef192531121faa3bf2088002a5",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/paris8/fete-personnels-accueil.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/paris8/fete-personnels-accueil.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 165772,
+      "output_bytes": 165772,
+      "source_sha256": "4f820c302f9a7839c3ec44c79f88a20d878aa4be3f876ac16f6a3af142f67a99",
+      "output_sha256": "4f820c302f9a7839c3ec44c79f88a20d878aa4be3f876ac16f6a3af142f67a99",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/paris8/fete-personnels-jeux.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/paris8/fete-personnels-jeux.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 142448,
+      "output_bytes": 142448,
+      "source_sha256": "e05b9cefd60e3e528c71512e5afc3a11c21ac1b6853bc2234a98ba8d46be9a61",
+      "output_sha256": "e05b9cefd60e3e528c71512e5afc3a11c21ac1b6853bc2234a98ba8d46be9a61",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/paris8/intra8-enm.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/paris8/intra8-enm.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 477370,
+      "output_bytes": 477370,
+      "source_sha256": "da6425e4521f24dc7fb77b50d6f8adba4512481d3623a0edb02dedd9b2d5deca",
+      "output_sha256": "da6425e4521f24dc7fb77b50d6f8adba4512481d3623a0edb02dedd9b2d5deca",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/paris8/intra8-portrait.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/paris8/intra8-portrait.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 305046,
+      "output_bytes": 305046,
+      "source_sha256": "dc6138bf8f7df991eb297234978fe3627438e2c0f3f8df53cfac17112199e98e",
+      "output_sha256": "dc6138bf8f7df991eb297234978fe3627438e2c0f3f8df53cfac17112199e98e",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/penzi/conversation.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/penzi/conversation.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 29872,
+      "output_bytes": 29872,
+      "source_sha256": "381a02fa2756c6e4c497be6c836b4541414f9312835ef76719d355ba26776f2f",
+      "output_sha256": "381a02fa2756c6e4c497be6c836b4541414f9312835ef76719d355ba26776f2f",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/penzi/discover.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/penzi/discover.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 32998,
+      "output_bytes": 32998,
+      "source_sha256": "3807f1378f9004a8561ccbfd71a2e1f9bfd52c510dff2e785c7c0685964eda5f",
+      "output_sha256": "3807f1378f9004a8561ccbfd71a2e1f9bfd52c510dff2e785c7c0685964eda5f",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/penzi/intentions.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/penzi/intentions.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 25974,
+      "output_bytes": 25974,
+      "source_sha256": "afe7ffc6bc805c731d51e8ec8eca4d5ac03e4b62d77dee9c8effb5955981b279",
+      "output_sha256": "afe7ffc6bc805c731d51e8ec8eca4d5ac03e4b62d77dee9c8effb5955981b279",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/penzi/privacy.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/penzi/privacy.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 26078,
+      "output_bytes": 26078,
+      "source_sha256": "a76136ca125db20ac83fa33648c0a46a3ab253f7b5fb4f74087380d65d740b69",
+      "output_sha256": "a76136ca125db20ac83fa33648c0a46a3ab253f7b5fb4f74087380d65d740b69",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/penzi/welcome.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/penzi/welcome.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 34738,
+      "output_bytes": 34738,
+      "source_sha256": "c89a8dbe3c1f8d7c9909e0159b152b68b8117dc53eb5003429fb0e71a30ce2ff",
+      "output_sha256": "c89a8dbe3c1f8d7c9909e0159b152b68b8117dc53eb5003429fb0e71a30ce2ff",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/wonderball/album-detail.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/wonderball/album-detail.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 90730,
+      "output_bytes": 90730,
+      "source_sha256": "6ab9e039c4b1c94e2b77614944348515572268c3bf6b665800277a85afa17684",
+      "output_sha256": "6ab9e039c4b1c94e2b77614944348515572268c3bf6b665800277a85afa17684",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/wonderball/albums.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/wonderball/albums.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 109198,
+      "output_bytes": 109198,
+      "source_sha256": "420070b6fc411bfa0dc283b8f37678602e05eab2aef6bec235cc16261d8d7b7d",
+      "output_sha256": "420070b6fc411bfa0dc283b8f37678602e05eab2aef6bec235cc16261d8d7b7d",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/wonderball/authors.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/wonderball/authors.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 35894,
+      "output_bytes": 35894,
+      "source_sha256": "7e57dc1b943101179d35dbb5a949cd9baccd5bfddafefa369a5d676b400a39f3",
+      "output_sha256": "7e57dc1b943101179d35dbb5a949cd9baccd5bfddafefa369a5d676b400a39f3",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/wonderball/excerpt.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/wonderball/excerpt.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 77052,
+      "output_bytes": 77052,
+      "source_sha256": "bdaa5263b7811c5e49fa41b5364c8a68baf14f7132939c49f4e052a837b133a3",
+      "output_sha256": "bdaa5263b7811c5e49fa41b5364c8a68baf14f7132939c49f4e052a837b133a3",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/wonderball/home.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/wonderball/home.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 92172,
+      "output_bytes": 92172,
+      "source_sha256": "31feb04246e68d56570373bdd47b97db4ea592cf4e992caf799961415c175785",
+      "output_sha256": "31feb04246e68d56570373bdd47b97db4ea592cf4e992caf799961415c175785",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/10-ans-01.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/10-ans-01.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 143252,
+      "output_bytes": 143252,
+      "source_sha256": "2ab70517d10de7dee4759ac78b632440f8ab2216a81fe63071d61b3f4d74c42b",
+      "output_sha256": "2ab70517d10de7dee4759ac78b632440f8ab2216a81fe63071d61b3f4d74c42b",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/10-ans-02.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/10-ans-02.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 212196,
+      "output_bytes": 212196,
+      "source_sha256": "1460c9b8144e9c5b18995a9c2ff9ed204a39300c809e400e9312646a05529bc0",
+      "output_sha256": "1460c9b8144e9c5b18995a9c2ff9ed204a39300c809e400e9312646a05529bc0",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/10-ans-03.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/10-ans-03.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 146190,
+      "output_bytes": 146190,
+      "source_sha256": "08cdec6d2171bec1ebcb6d936988d4ebeb134796dd1356a510c6c322ea1020bf",
+      "output_sha256": "08cdec6d2171bec1ebcb6d936988d4ebeb134796dd1356a510c6c322ea1020bf",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/10-ans-04.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/10-ans-04.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 168972,
+      "output_bytes": 168972,
+      "source_sha256": "7b7ec27db4b983cca7244fa1155677618321edb8ea1267e619079d3de93a8759",
+      "output_sha256": "7b7ec27db4b983cca7244fa1155677618321edb8ea1267e619079d3de93a8759",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/10-ans-05.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/10-ans-05.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 224238,
+      "output_bytes": 224238,
+      "source_sha256": "0d131ca4eceb23eb4fb1878a9c55ae93794892441e5de363e82727eae248e3c5",
+      "output_sha256": "0d131ca4eceb23eb4fb1878a9c55ae93794892441e5de363e82727eae248e3c5",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/anniversaire-01.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/anniversaire-01.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 143162,
+      "output_bytes": 143162,
+      "source_sha256": "c4c330936dcc04b5f4460d26338fa011d0403ef4a39797f22da01ae6dcfd3a19",
+      "output_sha256": "c4c330936dcc04b5f4460d26338fa011d0403ef4a39797f22da01ae6dcfd3a19",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/anniversaire-02.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/anniversaire-02.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 80446,
+      "output_bytes": 80446,
+      "source_sha256": "dd9b2fced77ca2835445103bc108d367baef38d9ab963ef9d0936bfaba20b2d0",
+      "output_sha256": "dd9b2fced77ca2835445103bc108d367baef38d9ab963ef9d0936bfaba20b2d0",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/anniversaire-03.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/anniversaire-03.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 256168,
+      "output_bytes": 256168,
+      "source_sha256": "8eba6cb5cd56152ea974ce3a3fcdd72749b52e3320d725f6e03942b64b38bcf2",
+      "output_sha256": "8eba6cb5cd56152ea974ce3a3fcdd72749b52e3320d725f6e03942b64b38bcf2",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-01.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-01.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 397826,
+      "output_bytes": 397826,
+      "source_sha256": "ea3a41a65619673c1eefe167d32a499230f4cb99508d89ad68cf1b0c37f8d1ce",
+      "output_sha256": "ea3a41a65619673c1eefe167d32a499230f4cb99508d89ad68cf1b0c37f8d1ce",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-02.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-02.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 219658,
+      "output_bytes": 219658,
+      "source_sha256": "9dda28e11c6447bf4002414799fcd6c04bd1bd19b853f5c9cb5dbff6de7f4c52",
+      "output_sha256": "9dda28e11c6447bf4002414799fcd6c04bd1bd19b853f5c9cb5dbff6de7f4c52",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-03.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-03.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 275312,
+      "output_bytes": 275312,
+      "source_sha256": "74706b78793406ad5b4b14614c70a0690270b721f3b537460ce2b7afed2e5ce1",
+      "output_sha256": "74706b78793406ad5b4b14614c70a0690270b721f3b537460ce2b7afed2e5ce1",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-04.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-04.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 183166,
+      "output_bytes": 183166,
+      "source_sha256": "6836ba32dd98f674621eb0eb8d223f46ddf10178114598cdbbc685d5d8c049ef",
+      "output_sha256": "6836ba32dd98f674621eb0eb8d223f46ddf10178114598cdbbc685d5d8c049ef",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-05.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-05.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 174408,
+      "output_bytes": 174408,
+      "source_sha256": "c7c5827284297745d5195c704f95fc07bf519f42d61ef84f4c3c88a7dda80ad0",
+      "output_sha256": "c7c5827284297745d5195c704f95fc07bf519f42d61ef84f4c3c88a7dda80ad0",
+      "byte_identical": true
+    },
+    {
+      "path": "assets/zero-waste/collecte-villette-06.webp",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/zero-waste/collecte-villette-06.webp",
+      "content_type": "application/octet-stream",
+      "source_bytes": 413532,
+      "output_bytes": 413532,
+      "source_sha256": "24021096cc87c81141ce0aad1b8a19a78453fc119339ff9cf1dda9d551cabb77",
+      "output_sha256": "24021096cc87c81141ce0aad1b8a19a78453fc119339ff9cf1dda9d551cabb77",
+      "byte_identical": true
+    },
+    {
+      "path": "index.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/",
+      "content_type": "text/html",
+      "source_bytes": 19701,
+      "output_bytes": 22974,
+      "source_sha256": "6f52326601346b567fac0a3d20fa5b3a52ef8c414b861738e3ac924ab00698dd",
+      "output_sha256": "49426e4e30c66a9e9c75d10e0ab52d59f5b48569feab6196efb1bf15abb6091f",
+      "byte_identical": false
+    },
+    {
+      "path": "pages.css",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/pages.css",
+      "content_type": "text/css",
+      "source_bytes": 6117,
+      "output_bytes": 6117,
+      "source_sha256": "c261a18a97fd8b95234d52bd39c1008a268208f84e809dcfef8df578cd9358c8",
+      "output_sha256": "c261a18a97fd8b95234d52bd39c1008a268208f84e809dcfef8df578cd9358c8",
+      "byte_identical": true
+    },
+    {
+      "path": "parcours.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/parcours.html",
+      "content_type": "text/html",
+      "source_bytes": 12875,
+      "output_bytes": 14033,
+      "source_sha256": "e8a35384e42d4088c2809723d0458629e7de4ff6c82050320822ca89cd86bee7",
+      "output_sha256": "c56e302bf148eabd8ab202b637f3acca37ecd05caecf2bb279e956969a7e3bb2",
+      "byte_identical": false
+    },
+    {
+      "path": "portfolio.css",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/portfolio.css",
+      "content_type": "text/css",
+      "source_bytes": 42816,
+      "output_bytes": 42816,
+      "source_sha256": "ae836f57cbaa02f7e5c85816c15a742815714fd63c9eee256431c3314fa38058",
+      "output_sha256": "ae836f57cbaa02f7e5c85816c15a742815714fd63c9eee256431c3314fa38058",
+      "byte_identical": true
+    },
+    {
+      "path": "projects.mjs",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projects.mjs",
+      "content_type": "text/javascript",
+      "source_bytes": 78577,
+      "output_bytes": 82384,
+      "source_sha256": "dd7adb67b32fc51b8778fe886ce7ed54963c4c00b0a54c154ca8be02fd4fb4a6",
+      "output_sha256": "eff38c49bf767b8e03eb07bc0d9a305fea77761035d24cf717474923cc6664d4",
+      "byte_identical": false
+    },
+    {
+      "path": "projets.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets.html",
+      "content_type": "text/html",
+      "source_bytes": 21072,
+      "output_bytes": 23593,
+      "source_sha256": "1ff5afe52ba96246f8030a3cb7afb31c58003695225fc27b1f119e9278343d4f",
+      "output_sha256": "a7ac86dc1a492e00a98422ac7715ef0d4e30ccdb7da2a2bb7dcb6961a08bdbbc",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/becomtech.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/becomtech.html",
+      "content_type": "text/html",
+      "source_bytes": 10925,
+      "output_bytes": 11848,
+      "source_sha256": "927235cf17394187e658e0671903a99a74ddcea250f6764f6fa9766de63b1655",
+      "output_sha256": "f57c09d50d48ef77214121e1b3208674b44879b889106536dcb2fbf94ef38166",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/campagnes-conceptuelles.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/campagnes-conceptuelles.html",
+      "content_type": "text/html",
+      "source_bytes": 14480,
+      "output_bytes": 16202,
+      "source_sha256": "1f48554fdf9a43beb4b7dfb581999d5c2fa08e5d9d0d5b1120337217caa283e1",
+      "output_sha256": "a5bc8ebcc29736d34d84ed2cf16d76cd757ad6d41e16ea2c769a06de14b3b136",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/cauvaillac.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/cauvaillac.html",
+      "content_type": "text/html",
+      "source_bytes": 14061,
+      "output_bytes": 15595,
+      "source_sha256": "7b357e7351a552eb299a78a901d861eb2efa93be228e00b20454fcc7c3d329e0",
+      "output_sha256": "a7ce1722922a457eb9bf40d1dd690339311a34d99ea6f97500127d0a0ef9224d",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/elles-bougent.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/elles-bougent.html",
+      "content_type": "text/html",
+      "source_bytes": 9571,
+      "output_bytes": 10682,
+      "source_sha256": "9cf083b1f44ad227088cd5979c61be489f4b5ad8707e6371fb6330c6f6e4055e",
+      "output_sha256": "dfc92c498acb2678353524c49138278d2eee111efbf1a53202b21a236f0364fe",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/happy-learning.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/happy-learning.html",
+      "content_type": "text/html",
+      "source_bytes": 14782,
+      "output_bytes": 16927,
+      "source_sha256": "1c4b92b8b1f5fe745f2f353d786049a3a2b8c36842d7360a64bce18e53d4e51e",
+      "output_sha256": "8cb020013a8513218bab26aaee3c43eea078b54aba821fbe60ffa0e96697a1d6",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/licorne-party.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/licorne-party.html",
+      "content_type": "text/html",
+      "source_bytes": 13602,
+      "output_bytes": 15042,
+      "source_sha256": "e4d4be937fc1b26ca26109e352741f3f3670b9a490de834666fd658ecb62de1c",
+      "output_sha256": "5ee490c7c26106d100e36f0c311c62e74828d00d2d87a1e5d898bfc8a09e5d8a",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/moina-accessoires.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/moina-accessoires.html",
+      "content_type": "text/html",
+      "source_bytes": 14493,
+      "output_bytes": 15886,
+      "source_sha256": "38f46b0a4dfb07b2d9b0e37383724b8b7245cd34a23c525efb86e6186c034239",
+      "output_sha256": "c8d3f0b492efae3c276caf9bc223eeeaafbfc505c53c8da9f341000d20ea702c",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/nextstep.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/nextstep.html",
+      "content_type": "text/html",
+      "source_bytes": 17253,
+      "output_bytes": 18693,
+      "source_sha256": "bfd2022bb6f51b0fdd7f58dbb0c14a0fca0599cda081ff6b59639ccfd3e78a97",
+      "output_sha256": "92edb38ae4543b891f56882efbcfd1f26790564d69ba6afe9835df67ed127dab",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/paris8-communication.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/paris8-communication.html",
+      "content_type": "text/html",
+      "source_bytes": 13454,
+      "output_bytes": 14753,
+      "source_sha256": "2d3b517433d03944428e081de0c810023667e91b68f14b5b491e501429f5de2e",
+      "output_sha256": "bfb1924a35fb748dc2eadc9e1fdd1f70df14340fd6b1c1f008371b1e6189b708",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/penzi.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/penzi.html",
+      "content_type": "text/html",
+      "source_bytes": 17370,
+      "output_bytes": 18810,
+      "source_sha256": "dc3c91aa81114ac16ce88fbe93da6a8ddd235a6ef7ad7e98834c4563c079eec9",
+      "output_sha256": "9653cb6fcd96c65b15d4ae2703ba7ac899c582c8baf5f47972993755ec08505c",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/wonderball.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/wonderball.html",
+      "content_type": "text/html",
+      "source_bytes": 13491,
+      "output_bytes": 14884,
+      "source_sha256": "853efdb50c20a5c88858c5b137e34dedce9d3437691138a23317afbe54d68a75",
+      "output_sha256": "abe7a2ddb58eac8bb2bf38fd9a17f7bf4cfb26ff0f2b12cb6bcd6a178dc38bd0",
+      "byte_identical": false
+    },
+    {
+      "path": "projets/zero-waste.html",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/zero-waste.html",
+      "content_type": "text/html",
+      "source_bytes": 24095,
+      "output_bytes": 26992,
+      "source_sha256": "b345883294445b8ea560d6c1cc4230c6071db86a57ec1c1ffdf4a3392d5bd54a",
+      "output_sha256": "161049b1f0b4fd200a5848e5a0f029df22459ecdb034b3e82c9f40f4d762371d",
+      "byte_identical": false
+    },
+    {
+      "path": "styles.css",
+      "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/styles.css",
+      "content_type": "text/css",
+      "source_bytes": 40149,
+      "output_bytes": 40337,
+      "source_sha256": "09870821e4113da695e01523078c0c8238748b6cfcc5e9fc53c2a87a0236eedb",
+      "output_sha256": "a97bc681b5b0050cb950bd8c0f342a76b44a0f82460032aa1e0bfbf1272c17b0",
+      "byte_identical": false
+    }
+  ],
+  "external_links_preserved": [
+    "http://www.w3.org/2000/svg",
+    "https://becomtech.fr/nos-programmes/",
+    "https://canva.link/6de2qhpx52o5q6z",
+    "https://canva.link/qhvhr6bs77obfgz",
+    "https://ville39.wordpress.com/",
+    "https://www.canva.com/d/UFtfzbu9JdhjCfu",
+    "https://www.ellesbougent.com/",
+    "https://www.ellesbougent.com/actions/programmes/",
+    "https://www.figma.com/design/prMxiXCzfgl0GIi1PFBky5/Penzi-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6",
+    "https://www.figma.com/design/rfeZphowJmSyywsNI6o93i/NextStep-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6",
+    "https://www.figma.com/design/tzB1YgJn1GJCysvzR5ds0G/LicornParty-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6",
+    "https://www.figma.com/design/vB7TcnXJjsGazOSScNGUGd/Cauvaillac-sur-Garonne-%C2%B7-Maquette-mobile?node-id=0-1&t=vivgkqyo9J1e3RpA-1",
+    "https://www.figma.com/design/zXebZKGCqpcCDRMcUJn12i/Moina-Accesoires--maquette-mobile?m=auto&t=FXqptfitiXI7gjhq-6",
+    "https://www.figma.com/design/zkIQ8BtgjZv6g1cBUMHPa8/Happy-Learning-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6",
+    "https://www.figma.com/slides/58HKfRIll2KKoJsQzkbqfR/BD-WonderBall?t=jJrEgFMIHn5DMxwL-6",
+    "https://www.instagram.com/zerowaste_paris/",
+    "https://zerowasteparis.fr/"
+  ],
+  "missing_required_resources": []
+}
