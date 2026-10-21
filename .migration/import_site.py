@@ -87,7 +87,7 @@ def remove_host_challenge(text):
 def portable(text, suffix):
     if suffix == ".html":
         text = remove_host_challenge(text)
-    text = re.sub(r"""(["'\x60])/(?!/)""", lambda m: m.group(1) + BASE, text)
+    text = re.sub(r"""(["'\x60])/(?!/|>)""", lambda m: m.group(1) + BASE, text)
     text = re.sub(r"url\(\s*/(?!/)", "url(" + BASE, text)
     text = text.replace(ORIGIN + "/", DESTINATION).replace(ORIGIN, DESTINATION.rstrip("/"))
     return text
