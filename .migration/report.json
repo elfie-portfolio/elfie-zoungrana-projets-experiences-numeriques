@@ -5,7 +5,7 @@
   "destination": "https://elfie-portfolio.github.io/elfie-zoungrana-projets-experiences-numeriques/",
   "file_count": 94,
   "source_bytes": 27069646,
-  "output_bytes": 27101240,
+  "output_bytes": 27080419,
   "counts_by_extension": {
     ".css": 3,
     ".html": 16,
@@ -46,9 +46,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/a-propos.html",
       "content_type": "text/html",
       "source_bytes": 11093,
-      "output_bytes": 11969,
-      "source_sha256": "df5b6b5fbcb7447c1f5a8d940480ff517cf920fd4db8465b03c85f88d793ae43",
-      "output_sha256": "f6f1f7722d1b34a17d612960961c7965486e237581826b2b856d30419084bab2",
+      "output_bytes": 10982,
+      "source_sha256": "043829b2275d0124bcbe439284f8db74e78581e7864f440f6e398af46a60eb01",
+      "output_sha256": "cc337671778ff2e551f5d231ff86e4c336bf7e2d1e9c664af3cf8761151c7d62",
       "byte_identical": false
     },
     {
@@ -56,9 +56,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/app.mjs",
       "content_type": "text/javascript",
       "source_bytes": 24096,
-      "output_bytes": 24989,
+      "output_bytes": 24895,
       "source_sha256": "3c8738dfff0738d29ce5921efd46fa3e3325119f2af4f5b334752240c2f53924",
-      "output_sha256": "c80a9475ebe6d6dc081dc3db55e9fa081bf0d7306b3b8b93769194851a5086e9",
+      "output_sha256": "90b2c17cb0dfc55932579c8780ead78f7fe62d67ea70e66f54c4b5ecfd312588",
       "byte_identical": false
     },
     {
@@ -166,10 +166,10 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/assets/favicon.svg",
       "content_type": "image/svg+xml",
       "source_bytes": 228,
-      "output_bytes": 369,
+      "output_bytes": 228,
       "source_sha256": "5e9c1f89510b03d443b16fe35f038141ad426b22e86cd822832353454eaedf99",
-      "output_sha256": "f2ca75881a9dafef52e9a021798c540927ca8da9b0c4f0825b621847b79de91b",
-      "byte_identical": false
+      "output_sha256": "5e9c1f89510b03d443b16fe35f038141ad426b22e86cd822832353454eaedf99",
+      "byte_identical": true
     },
     {
       "path": "assets/fonts/mono.otf",
@@ -796,9 +796,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/",
       "content_type": "text/html",
       "source_bytes": 19701,
-      "output_bytes": 22974,
-      "source_sha256": "6f52326601346b567fac0a3d20fa5b3a52ef8c414b861738e3ac924ab00698dd",
-      "output_sha256": "49426e4e30c66a9e9c75d10e0ab52d59f5b48569feab6196efb1bf15abb6091f",
+      "output_bytes": 20201,
+      "source_sha256": "a1d3e7e74e66a01ab1c7b4e33e8c67adb90e9b5cab428804b1d9680333abdeca",
+      "output_sha256": "b02c428ab642aaa0c022eaaabfe7eeae676dbbb36fcaa7e07ca58217de40d343",
       "byte_identical": false
     },
     {
@@ -816,9 +816,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/parcours.html",
       "content_type": "text/html",
       "source_bytes": 12875,
-      "output_bytes": 14033,
-      "source_sha256": "e8a35384e42d4088c2809723d0458629e7de4ff6c82050320822ca89cd86bee7",
-      "output_sha256": "c56e302bf148eabd8ab202b637f3acca37ecd05caecf2bb279e956969a7e3bb2",
+      "output_bytes": 13093,
+      "source_sha256": "c75451e8d49192a5e5c2e977b0ccd26ae64145a4c063f65b5b9b61b6f6fa30ba",
+      "output_sha256": "f294bdc0c114acebdf6498d2e49e893dd63065c39a80c9eed5085b9b5cb63f22",
       "byte_identical": false
     },
     {
@@ -846,9 +846,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets.html",
       "content_type": "text/html",
       "source_bytes": 21072,
-      "output_bytes": 23593,
-      "source_sha256": "1ff5afe52ba96246f8030a3cb7afb31c58003695225fc27b1f119e9278343d4f",
-      "output_sha256": "a7ac86dc1a492e00a98422ac7715ef0d4e30ccdb7da2a2bb7dcb6961a08bdbbc",
+      "output_bytes": 21854,
+      "source_sha256": "e0909d023eae7745947c434978db6ab6d693a66a424cd0b88130361ecee6a61e",
+      "output_sha256": "dadc51f0b9c9d7f7353fa4405dccd74483ad1a90129880ac1d8d5684c1fce73a",
       "byte_identical": false
     },
     {
@@ -856,9 +856,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/becomtech.html",
       "content_type": "text/html",
       "source_bytes": 10925,
-      "output_bytes": 11848,
-      "source_sha256": "927235cf17394187e658e0671903a99a74ddcea250f6764f6fa9766de63b1655",
-      "output_sha256": "f57c09d50d48ef77214121e1b3208674b44879b889106536dcb2fbf94ef38166",
+      "output_bytes": 10767,
+      "source_sha256": "d8b6c8b891d7398062b1477a6f7a1c4a6f3e6af68c25f01b243303ae01d271fc",
+      "output_sha256": "465c69c429504a253189627deb1bcca1af096886d2e6a5385feea898e2edbc97",
       "byte_identical": false
     },
     {
@@ -866,9 +866,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/campagnes-conceptuelles.html",
       "content_type": "text/html",
       "source_bytes": 14480,
-      "output_bytes": 16202,
-      "source_sha256": "1f48554fdf9a43beb4b7dfb581999d5c2fa08e5d9d0d5b1120337217caa283e1",
-      "output_sha256": "a5bc8ebcc29736d34d84ed2cf16d76cd757ad6d41e16ea2c769a06de14b3b136",
+      "output_bytes": 15168,
+      "source_sha256": "acc77512cc01fb53585b1f5341421857c6297dfffcdf160f64744b6cd18d6f37",
+      "output_sha256": "7553645083602e1840bacaebd18abdcb79bc8678a7a6aaaa32fec7278faf8d40",
       "byte_identical": false
     },
     {
@@ -876,9 +876,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/cauvaillac.html",
       "content_type": "text/html",
       "source_bytes": 14061,
-      "output_bytes": 15595,
-      "source_sha256": "7b357e7351a552eb299a78a901d861eb2efa93be228e00b20454fcc7c3d329e0",
-      "output_sha256": "a7ce1722922a457eb9bf40d1dd690339311a34d99ea6f97500127d0a0ef9224d",
+      "output_bytes": 14373,
+      "source_sha256": "3624b01ad11299d83101bb3a2da12b0d335c944c1df67b6b6998d811f7a73b6a",
+      "output_sha256": "56473b08790555359135d102ee51a6ecd38b59848c8cd34db1c7e23f8aee5ba9",
       "byte_identical": false
     },
     {
@@ -886,9 +886,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/elles-bougent.html",
       "content_type": "text/html",
       "source_bytes": 9571,
-      "output_bytes": 10682,
-      "source_sha256": "9cf083b1f44ad227088cd5979c61be489f4b5ad8707e6371fb6330c6f6e4055e",
-      "output_sha256": "dfc92c498acb2678353524c49138278d2eee111efbf1a53202b21a236f0364fe",
+      "output_bytes": 9460,
+      "source_sha256": "242ae72d6f1f4e803ed70603beef4ce13711ee14151a3b123cca8bd4cb8d35be",
+      "output_sha256": "ff53355632c972b1b7a8c497a77765c02d70e5e6dad4a587ca4dd7950bce2966",
       "byte_identical": false
     },
     {
@@ -896,9 +896,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/happy-learning.html",
       "content_type": "text/html",
       "source_bytes": 14782,
-      "output_bytes": 16927,
-      "source_sha256": "1c4b92b8b1f5fe745f2f353d786049a3a2b8c36842d7360a64bce18e53d4e51e",
-      "output_sha256": "8cb020013a8513218bab26aaee3c43eea078b54aba821fbe60ffa0e96697a1d6",
+      "output_bytes": 15376,
+      "source_sha256": "2f4928d95e7e226a917b1fc74f04bd4e45bfdf96b3a056901e027e30723c1696",
+      "output_sha256": "3fd1f3cba16226d85a28aa43459d4b40aa87dfcb7f810d612769a51c800a35e8",
       "byte_identical": false
     },
     {
@@ -906,9 +906,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/licorne-party.html",
       "content_type": "text/html",
       "source_bytes": 13602,
-      "output_bytes": 15042,
-      "source_sha256": "e4d4be937fc1b26ca26109e352741f3f3670b9a490de834666fd658ecb62de1c",
-      "output_sha256": "5ee490c7c26106d100e36f0c311c62e74828d00d2d87a1e5d898bfc8a09e5d8a",
+      "output_bytes": 13961,
+      "source_sha256": "e8967d81e31fe1025ca90c3a6bf23ddc6a726038c95c604b10c5c37dcb357d20",
+      "output_sha256": "1a912b3f4cc4d3983976aba758672bd84f2a319a7bef05c542953af62184d245",
       "byte_identical": false
     },
     {
@@ -916,9 +916,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/moina-accessoires.html",
       "content_type": "text/html",
       "source_bytes": 14493,
-      "output_bytes": 15886,
-      "source_sha256": "38f46b0a4dfb07b2d9b0e37383724b8b7245cd34a23c525efb86e6186c034239",
-      "output_sha256": "c8d3f0b492efae3c276caf9bc223eeeaafbfc505c53c8da9f341000d20ea702c",
+      "output_bytes": 14805,
+      "source_sha256": "8d636ece5e27ffaf9b31b95bacd2fd28b60f4e07f1bedf014b908ba1ff2b6447",
+      "output_sha256": "5c9f0c4c093330cd846419797cc54f6778599101da044d479d9fbbb03b6c225d",
       "byte_identical": false
     },
     {
@@ -926,9 +926,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/nextstep.html",
       "content_type": "text/html",
       "source_bytes": 17253,
-      "output_bytes": 18693,
-      "source_sha256": "bfd2022bb6f51b0fdd7f58dbb0c14a0fca0599cda081ff6b59639ccfd3e78a97",
-      "output_sha256": "92edb38ae4543b891f56882efbcfd1f26790564d69ba6afe9835df67ed127dab",
+      "output_bytes": 17612,
+      "source_sha256": "a7a3136e4beb3c3878d855c5a57cb8ecc76d11e83fd7995a1e9be82fcb43076e",
+      "output_sha256": "71d83adbf0a30f650d13becad81f8a152060c41742fe1e9c0e8558b04a32bcf4",
       "byte_identical": false
     },
     {
@@ -936,9 +936,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/paris8-communication.html",
       "content_type": "text/html",
       "source_bytes": 13454,
-      "output_bytes": 14753,
-      "source_sha256": "2d3b517433d03944428e081de0c810023667e91b68f14b5b491e501429f5de2e",
-      "output_sha256": "bfb1924a35fb748dc2eadc9e1fdd1f70df14340fd6b1c1f008371b1e6189b708",
+      "output_bytes": 13719,
+      "source_sha256": "3cf975e490e89c7ae399e555cd21331ce5c7ca2fe195bab916c8db171863c88e",
+      "output_sha256": "38d8f115974f1c26d0d371d9ebebad8bbe71807f598135a04c96c135fdbafa29",
       "byte_identical": false
     },
     {
@@ -946,9 +946,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/penzi.html",
       "content_type": "text/html",
       "source_bytes": 17370,
-      "output_bytes": 18810,
-      "source_sha256": "dc3c91aa81114ac16ce88fbe93da6a8ddd235a6ef7ad7e98834c4563c079eec9",
-      "output_sha256": "9653cb6fcd96c65b15d4ae2703ba7ac899c582c8baf5f47972993755ec08505c",
+      "output_bytes": 17729,
+      "source_sha256": "6cb9eff7e07d9336d60dea86397d54b731c84608eb9e13c849152613f9bd4f19",
+      "output_sha256": "42b483a7a6cf1db328bb632007e9256176e4d7ba0dc570bd559244c94024e4f7",
       "byte_identical": false
     },
     {
@@ -956,9 +956,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/wonderball.html",
       "content_type": "text/html",
       "source_bytes": 13491,
-      "output_bytes": 14884,
-      "source_sha256": "853efdb50c20a5c88858c5b137e34dedce9d3437691138a23317afbe54d68a75",
-      "output_sha256": "abe7a2ddb58eac8bb2bf38fd9a17f7bf4cfb26ff0f2b12cb6bcd6a178dc38bd0",
+      "output_bytes": 13803,
+      "source_sha256": "3d349d7e6855340f8ef4c8ad80490345eff6ccf00ea364365599869e6c43a7c2",
+      "output_sha256": "afaea89be2d042523b8513979949f7d759669610fd6c593c7b4a3b608b3c476a",
       "byte_identical": false
     },
     {
@@ -966,9 +966,9 @@
       "source_url": "https://elfie-lab-portfolio.roundotter8.chatgpt.site/projets/zero-waste.html",
       "content_type": "text/html",
       "source_bytes": 24095,
-      "output_bytes": 26992,
-      "source_sha256": "b345883294445b8ea560d6c1cc4230c6071db86a57ec1c1ffdf4a3392d5bd54a",
-      "output_sha256": "161049b1f0b4fd200a5848e5a0f029df22459ecdb034b3e82c9f40f4d762371d",
+      "output_bytes": 25394,
+      "source_sha256": "5d43d54b67e0cf33751a31ad57fbafc2b746e8f08f1d004ea8a55986fec43324",
+      "output_sha256": "d9422a01ad60bcc0441ca36f73b46590bd107daa76c7e5ba1ffd79297ad46ae7",
       "byte_identical": false
     },
     {
