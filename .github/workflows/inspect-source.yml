@@ -1,0 +1,72 @@
+name: Inspect current portfolio source
+on:
+  push:
+    branches: ["migration/complete-elfie-site"]
+    paths: [".github/workflows/inspect-source.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/complete-elfie-site
+      - name: Read published HTML, styles and scripts without altering the Site
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, urllib.request, urllib.parse
+          from html.parser import HTMLParser
+
+          origin = "https://elfie-lab-portfolio.roundotter8.chatgpt.site"
+          root = pathlib.Path(".migration/published")
+          root.mkdir(parents=True, exist_ok=True)
+          report = []
+          pending = [origin + "/"]
+          seen = set()
+
+          class Links(HTMLParser):
+              def handle_starttag(self, tag, attrs):
+                  a = dict(attrs)
+                  if tag == "script" and a.get("src"):
+                      pending.append(urllib.parse.urljoin(origin + "/", a["src"]))
+                  if tag == "link" and a.get("href") and set(a.get("rel", "").split()) & {"stylesheet", "modulepreload"}:
+                      pending.append(urllib.parse.urljoin(origin + "/", a["href"]))
+
+          while pending:
+              url = pending.pop(0)
+              url = urllib.parse.urldefrag(url)[0]
+              if url in seen or urllib.parse.urlsplit(url).netloc != urllib.parse.urlsplit(origin).netloc:
+                  continue
+              seen.add(url)
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (portfolio owner migration)", "Accept-Encoding": "identity"})
+              with urllib.request.urlopen(req, timeout=60) as response:
+                  data = response.read()
+                  mime = response.headers.get("Content-Type", "")
+                  final_url = response.url
+              relative = urllib.parse.unquote(urllib.parse.urlsplit(url).path).lstrip("/") or "index.html"
+              target = root / relative
+              if ".." in pathlib.PurePosixPath(relative).parts:
+                  raise ValueError("Unsafe path")
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+              report.append({"url": url, "path": str(target), "bytes": len(data), "content_type": mime, "final_url": final_url})
+              print(json.dumps(report[-1]))
+              if url == origin + "/":
+                  text = data.decode("utf-8")
+                  if "<html" not in text.lower() or "elfie" not in text.lower():
+                      raise RuntimeError("Source homepage is not the expected portfolio")
+                  Links().feed(text)
+          pathlib.Path(".migration/inspection.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+          PY
+      - name: Save inspection files on the migration branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .migration
+          if ! git diff --cached --quiet; then
+            git commit -m "Inspect original published portfolio files for faithful migration"
+            git push origin HEAD:migration/complete-elfie-site
+          fi
