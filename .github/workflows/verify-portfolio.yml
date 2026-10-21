@@ -1,0 +1,39 @@
+name: Verify complete portfolio fidelity
+on:
+  push:
+    branches: ["migration/complete-elfie-site"]
+    paths: [".migration/verify_portfolio.py", ".github/workflows/verify-portfolio.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/complete-elfie-site
+      - name: Check whether the original source repository permits anonymous reading
+        continue-on-error: true
+        env:
+          GIT_TERMINAL_PROMPT: 0
+        run: timeout 20 git ls-remote https://git.chatgpt-team.site/1df2d220-a45d-4e02-a61e-899b3e9c9c71/appgprj_6ad63d0da22c81918b1ca8dba454f6af.git
+      - name: Install browser verification dependencies
+        run: |
+          python3 -m pip install --disable-pip-version-check playwright pillow
+          python3 -m playwright install --with-deps chromium
+      - name: Compare original and exported pages and test interactions
+        run: python3 .migration/verify_portfolio.py
+      - name: Save the browser verification report
+        if: always()
+        run: |
+          if [ -f .migration/browser-report.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .migration/browser-report.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Record original-versus-exported browser verification results"
+              git push origin HEAD:migration/complete-elfie-site
+            fi
+          fi
