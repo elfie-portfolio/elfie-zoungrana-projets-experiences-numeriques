@@ -1,0 +1,5 @@
+{
+  "available": false,
+  "error": "Command '['git', 'clone', '--no-checkout', 'https://git.chatgpt-team.site/1df2d220-a45d-4e02-a61e-899b3e9c9c71/appgprj_6ad63d0da22c81918b1ca8dba454f6af.git', '/tmp/elfie-original-rz3iofej/source']' returned non-zero exit status 128.",
+  "error_detail": "Cloning into '/tmp/elfie-original-rz3iofej/source'...\nfatal: could not read Username for 'https://git.chatgpt-team.site': terminal prompts disabled\n"
+}
