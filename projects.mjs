@@ -183,7 +183,7 @@ export const projects = [
     "id": "zero-waste",
     "title": "Zero Waste Paris",
     "category": "communication",
-    "year": "2026",
+    "year": "",
     "type": "Volontaire en service civique · 6 mois",
     "short": "Des publications pour les 10 ans, des propositions d’affiches pour la collecte à la Villette et des projets zéro déchet sur le terrain.",
     "lead": "Des posts sur les réseaux sociaux aux actions sur le terrain.",
@@ -193,12 +193,12 @@ export const projects = [
       "Sensibilisation"
     ],
     "status": "Service civique · Communication & projets zéro déchet",
-    "context": "Un service civique de six mois, du 1er avril au 30 septembre 2026, autour du zéro déchet et du zéro gaspillage. L’association fêtait ses 10 ans cette année-là. Dans un contexte de budgets plus serrés, la communication aidait à faire connaître ses actions, à encourager les soutiens et à annoncer les événements locaux.",
+    "context": "Un service civique de six mois, du 1er avril au 30 septembre, autour du zéro déchet et du zéro gaspillage. L’association fêtait ses 10 ans cette année-là. Dans un contexte de budgets plus serrés, la communication aidait à faire connaître ses actions, à encourager les soutiens et à annoncer les événements locaux.",
     "contribution": "Création de publications Instagram et LinkedIn, de visuels pour les 10 ans et de plusieurs propositions d’affiches pour la collecte au bassin de la Villette. Canva a servi à organiser les textes, les photos et les informations pratiques. Les missions comprenaient aussi la rédaction d’articles web, la prise de photos, les outils de sensibilisation, la coanimation de stands et d’ateliers, l’aide aux événements, la recherche de partenaires, les cartes et les tableaux de suivi.",
     "facts": [
       {
         "label": "Période",
-        "value": "1er avril–30 septembre 2026 · 6 mois"
+        "value": "1er avril–30 septembre · 6 mois"
       },
       {
         "label": "Statut",
@@ -247,7 +247,7 @@ export const projects = [
           "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/zero-waste/collecte-villette-01.webp",
           "width": 1414,
           "height": 2000,
-          "alt": "Proposition d’affiche turquoise pour la collecte du 7 juillet 2026 au bassin de la Villette, avec photos et informations d’inscription."
+          "alt": "Proposition d’affiche turquoise pour la collecte du 7 juillet au bassin de la Villette, avec photos et informations d’inscription."
         },
         {
           "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/zero-waste/10-ans-05.webp",
@@ -361,7 +361,7 @@ export const projects = [
         "galleryLayout": "posters",
         "galleryEyebrow": "02 / ACTION LOCALE",
         "galleryHeading": "Une collecte au bassin de la Villette.",
-        "galleryIntro": "Six propositions d’affiches pour annoncer la collecte citoyenne sur l’eau du 7 juillet 2026, dans un lieu très fréquenté. L’objectif : expliquer l’action et rendre visibles le lieu, les horaires, la gratuité et l’inscription. Photos et illustrations permettent d’explorer plusieurs styles.",
+        "galleryIntro": "Six propositions d’affiches pour annoncer la collecte citoyenne sur l’eau du 7 juillet, dans un lieu très fréquenté. L’objectif : expliquer l’action et rendre visibles le lieu, les horaires, la gratuité et l’inscription. Photos et illustrations permettent d’explorer plusieurs styles.",
         "link": {
           "label": "Voir les six propositions sur Canva",
           "url": "https://canva.link/6de2qhpx52o5q6z"
@@ -372,7 +372,7 @@ export const projects = [
             "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/zero-waste/collecte-villette-01.webp",
             "width": 1414,
             "height": 2000,
-            "alt": "Affiche turquoise et blanche avec des photos de la collecte, les deux créneaux du 7 juillet 2026 et un QR code d’inscription."
+            "alt": "Affiche turquoise et blanche avec des photos de la collecte, les deux créneaux du 7 juillet et un QR code d’inscription."
           },
           {
             "title": "Un grand titre sur fond bleu",
@@ -550,13 +550,13 @@ export const projects = [
     "id": "happy-learning",
     "title": "Happy Learning",
     "category": "pedagogie",
-    "year": "2026",
+    "year": "",
     "type": "Challenge InnovaTech · Projet collectif",
     "status": "Concept EdTech · Équipe lauréate",
     "draft": false,
     "short": "Imaginer l’école de demain en équipe et remporter le 1er prix régional du Challenge InnovaTech.",
     "lead": "Une idée pour l’école de demain : apprendre à son rythme, prendre soin de soi et préparer son avenir.",
-    "context": "Nous avons imaginé Happy Learning au Challenge InnovaTech d’Elles Bougent, sur le thème de l’école de demain. Avec l’équipe Génération’Elles, nous avons cherché comment varier les façons d’apprendre, aider chaque élève et préparer son avenir. La finale régionale Île-de-France a eu lieu le 19 mars 2026 à l’École 42, à Paris.",
+    "context": "Nous avons imaginé Happy Learning au Challenge InnovaTech d’Elles Bougent, sur le thème de l’école de demain. Avec l’équipe Génération’Elles, nous avons cherché comment varier les façons d’apprendre, aider chaque élève et préparer son avenir. La finale régionale Île-de-France a eu lieu le 19 mars à l’École 42, à Paris.",
     "contribution": "Participation aux idées et à la création de Happy Learning avec l’équipe Génération’Elles. Un travail entre étudiantes et lycéennes, avec l’aide d’une marraine qui travaille dans la tech.",
     "approach": [
       "Partir des difficultés des élèves : le manque de motivation, la pression scolaire, les inégalités et les questions d’orientation.",
@@ -584,18 +584,18 @@ export const projects = [
     "deliverables": "Une présentation en équipe, une maquette numérique et une version mobile de neuf écrans sur Figma. Les documents du challenge et du prix régional sont aussi disponibles.",
     "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/happy-learning/concept-maquette.webp",
     "imageAlt": "Page de la présentation collective montrant la maquette Happy Learning sur un ordinateur portable.",
-    "caption": "La maquette du concept telle qu’elle figure dans la présentation collective Happy Learning — Challenge InnovaTech 2026.",
+    "caption": "La maquette du concept telle qu’elle figure dans la présentation collective Happy Learning — Challenge InnovaTech.",
     "primaryAction": {
       "label": "Ouvrir la maquette Figma",
       "url": "https://www.figma.com/design/zkIQ8BtgjZv6g1cBUMHPa8/Happy-Learning-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6"
     },
     "recognition": {
       "title": "1er prix régional — Île-de-France",
-      "event": "Challenge InnovaTech 2026 · Elles Bougent",
+      "event": "Challenge InnovaTech · Elles Bougent",
       "team": "Équipe Génération’Elles",
-      "description": "Notre équipe Génération’Elles a remporté le 1er prix de la finale régionale Île-de-France du Challenge InnovaTech 2026 avec Happy Learning, un projet consacré à l’école de demain.",
+      "description": "Notre équipe Génération’Elles a remporté le 1er prix de la finale régionale Île-de-France du Challenge InnovaTech avec Happy Learning, un projet consacré à l’école de demain.",
       "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/happy-learning/prix-regional.webp",
-      "imageAlt": "Trophée Elles Bougent, Challenge InnovaTech édition 2026 : 1er prix Région Île-de-France."
+      "imageAlt": "Trophée Elles Bougent, Challenge InnovaTech : 1er prix Région Île-de-France."
     },
     "galleryIntro": "Voici quatre des neuf écrans de la version mobile. On y retrouve les grands espaces de Happy Learning. Les informations affichées sont des exemples.",
     "gallery": [
@@ -635,19 +635,19 @@ export const projects = [
       },
       {
         "label": "Voir le prix régional",
-        "info": "PDF · Trophée Île-de-France 2026",
+        "info": "PDF · Trophée Île-de-France",
         "url": "/elfie-zoungrana-projets-experiences-numeriques/assets/docs/innovatech-prix-regional-idf-2026.pdf",
         "kind": "pdf"
       },
       {
         "label": "Découvrir le challenge",
-        "info": "PDF · Fiche de présentation 2026",
+        "info": "PDF · Fiche de présentation",
         "url": "/elfie-zoungrana-projets-experiences-numeriques/assets/docs/innovatech-presentation-challenge.pdf",
         "kind": "pdf"
       },
       {
         "label": "Voir l’affiche de l’événement",
-        "info": "PDF · Île-de-France · 19 mars 2026",
+        "info": "PDF · Île-de-France · 19 mars",
         "url": "/elfie-zoungrana-projets-experiences-numeriques/assets/docs/innovatech-affiche-idf-2026.pdf",
         "kind": "pdf"
       }
@@ -863,13 +863,13 @@ export const projects = [
     contribution:'Membre de l’association, avec une participation à des forums, au Challenge InnovaTech et au Challenge InnovaTech Collège. Ces rencontres permettent de découvrir des métiers, d’échanger avec des professionnelles et de créer des projets en équipe.',
     approach:[
       'Participer à des forums et à des rencontres pour poser des questions sur les métiers scientifiques et techniques.',
-      'Créer Happy Learning avec l’équipe Génération’Elles au Challenge InnovaTech 2026, sur le thème de l’école de demain.',
+      'Créer Happy Learning avec l’équipe Génération’Elles au Challenge InnovaTech, sur le thème de l’école de demain.',
       'Participer aussi au Challenge InnovaTech Collège, un format qui permet aux collégiennes de chercher des idées et de travailler en équipe.'
     ],
     takeaway:'Ces expériences me donnent envie d’en découvrir davantage sur la tech et de soutenir la place des filles dans ces métiers. Elles me permettent aussi de travailler en équipe et de rencontrer des femmes aux parcours variés.',
     skills:['Travail en équipe','Recherche d’idées','Présentation de projet','Échanges professionnels','Sensibilisation à la mixité'],tools:[],
-    deliverables:'Participation à des forums et aux deux formats du Challenge InnovaTech. Avec Happy Learning, l’équipe Génération’Elles a remporté le 1er prix régional Île-de-France en 2026.',
-    resources:[{label:'Découvrir Happy Learning',info:'Projet collectif primé · Île-de-France 2026',url:'/elfie-zoungrana-projets-experiences-numeriques/projets/happy-learning.html',kind:'web'},{label:'Découvrir Elles bougent',info:'Site de l’association',url:'https://www.ellesbougent.com/',kind:'web'},{label:'Les programmes et le Challenge Collège',info:'Présentation des programmes',url:'https://www.ellesbougent.com/actions/programmes/',kind:'web'}]
+    deliverables:'Participation à des forums et aux deux formats du Challenge InnovaTech. Avec Happy Learning, l’équipe Génération’Elles a remporté le 1er prix régional Île-de-France.',
+    resources:[{label:'Découvrir Happy Learning',info:'Projet collectif primé · Île-de-France',url:'/elfie-zoungrana-projets-experiences-numeriques/projets/happy-learning.html',kind:'web'},{label:'Découvrir Elles bougent',info:'Site de l’association',url:'https://www.ellesbougent.com/',kind:'web'},{label:'Les programmes et le Challenge Collège',info:'Présentation des programmes',url:'https://www.ellesbougent.com/actions/programmes/',kind:'web'}]
   },
   {
     id:'campagnes-conceptuelles',title:'Campagnes conceptuelles',category:'communication',year:'',
