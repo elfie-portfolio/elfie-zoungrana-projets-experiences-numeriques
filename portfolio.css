@@ -316,3 +316,18 @@
 .project-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#111}
 .project-video figcaption{padding:12px 15px;font-family:var(--mono);font-size:9px;line-height:1.7;color:var(--muted);background:var(--surface);border-top:1px solid var(--line)}
 @media(max-width:700px){.brand-art-grid{inset:52px 25px 33px;gap:17px}.brand-art-caption{left:26px;font-size:6px;bottom:13px}.showcase-campagnes-conceptuelles .showcase-label>span:first-child{font-size:20px}.showcase-campagnes-conceptuelles .showcase-label>span:last-child{max-width:85px}.showcase-campagnes-conceptuelles .showcase-screens{grid-template-columns:.8fr 1.2fr;gap:15px;padding:22px 20px 25px}.showcase-campagnes-conceptuelles .showcase-screens img:nth-child(2){display:block}.project-video{margin-bottom:26px}.project-video figcaption{font-size:8px}}
+
+
+/* Mini-projet Femmes & Tech — carte du portfolio */
+.art-femmes-tech{background:linear-gradient(140deg,#ece5ff 0%,#fce5ef 58%,#f3eeff 100%);color:#24183e;position:relative;overflow:hidden;padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
+.art-femmes-tech::after{content:"";position:absolute;right:-68px;top:46px;width:240px;height:240px;border:1px solid rgba(82,53,174,.21);border-radius:50%;box-shadow:0 0 0 30px rgba(130,112,216,.08),0 0 0 65px rgba(130,112,216,.05);pointer-events:none}
+.art-femmes-tech .art-eyebrow{color:#3c286d;position:relative;z-index:1}
+.femmes-art-intro{font-size:clamp(46px,5vw,70px);font-weight:850;line-height:.95;letter-spacing:-.075em;position:relative;z-index:1;margin-top:14px}
+.femmes-art-intro em{color:#bd397f;font-family:Georgia,serif;font-weight:400}
+.femmes-art-dot{color:#bd397f}
+.femmes-art-metrics{display:flex;gap:11px;position:relative;z-index:1;margin-top:22px}
+.femmes-art-metrics span{background:rgba(255,255,255,.83);border:1px solid rgba(101,65,158,.17);border-radius:12px;padding:10px 12px;flex:1;min-width:0}
+.femmes-art-metrics b{display:block;font-size:clamp(20px,2.2vw,29px);line-height:1.1;color:#48308e}
+.femmes-art-metrics small{display:block;margin-top:5px;font-size:9px;letter-spacing:.055em;line-height:1.4;font-weight:650}
+.femmes-art-footer{font-size:10px;letter-spacing:.12em;font-weight:750;color:#463466;position:relative;z-index:1;margin-top:15px}
+@media(max-width:480px){.art-femmes-tech{min-height:270px;padding:17px}.femmes-art-intro{font-size:49px}.femmes-art-metrics small{font-size:8px}}

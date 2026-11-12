@@ -16,6 +16,26 @@ export const pillars = [
 
 export const projects = [
   {
+    id: 'femmes-tech', title: 'Femmes & Tech', category: 'web', year: '',
+    url: '/elfie-zoungrana-projets-experiences-numeriques/data/femmes-tech.html',
+    type: 'Mini-projet personnel · Datavisualisation interactive',
+    short: 'Explorer la place des femmes dans les professions du numérique en France et parmi les spécialistes TIC en Europe.',
+    lead: 'Des données publiques pour mieux comprendre la place des femmes dans la tech.',
+    tags: ['Datavisualisation', 'Données ouvertes', 'HTML · CSS · JavaScript'],
+    context: 'Création autonome d’une page interactive à partir de statistiques publiques de l’Insee et d’Eurostat sur l’emploi numérique en 2025.',
+    contribution: 'Sélection et vérification des sources, préparation des données, création des graphiques et filtres interactifs, rédaction des résultats et des limites méthodologiques.',
+    approach: ['Étudier les périmètres statistiques des sources', 'Organiser les indicateurs et construire des graphiques interactifs', 'Vérifier les chiffres, citer les sources et expliciter les limites'],
+    takeaway: 'Comparer deux sources demande de vérifier que leurs définitions couvrent bien les mêmes populations : les professions numériques de l’Insee et les spécialistes TIC d’Eurostat ne sont pas directement comparables.',
+    skills: ['Analyse de données', 'Données publiques', 'Datavisualisation', 'Développement web', 'Esprit critique'],
+    tools: ['HTML', 'CSS', 'JavaScript'],
+    facts: [{label:'Sources',value:'Insee · Eurostat'},{label:'Données',value:'Emploi numérique, 2025'}],
+    resources: [
+      {label:'Explorer le tableau de bord',info:'Visualisations et filtres interactifs',url:'/elfie-zoungrana-projets-experiences-numeriques/data/femmes-tech.html',kind:'web'},
+      {label:'Consulter les données de l’Insee',info:'Source publique',url:'https://www.insee.fr/fr/statistiques/6797392',kind:'web'},
+      {label:'Consulter les données Eurostat',info:'Source publique',url:'https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260527-2',kind:'web'}
+    ]
+  },
+  {
     id: 'nextstep', title: 'NextStep', category: 'design', year: '',
     type: 'Projet universitaire en binôme · Licence 3',
     short: 'Imaginer une application pour trouver un mentor dans le numérique et réfléchir à la façon de la faire connaître.',
@@ -971,14 +991,14 @@ export const projects = [
   }
 ];
 
-const order=['happy-learning','nextstep','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
+const order=['happy-learning','nextstep','femmes-tech','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
 projects.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
 const confirmedTools={nextstep:['Figma'],penzi:['Figma'],'zero-waste':['Canva','Google Workspace','My Maps','Slack'],wonderball:['Figma']};
 for(const project of projects){project.tools??=confirmedTools[project.id]||[];project.tags??=project.skills.slice(0,3);}
 
 export const featuredProjectIds = ['happy-learning','nextstep','cauvaillac','zero-waste'];
 
-export function projectUrl(project){return `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`;}
+export function projectUrl(project){return project.url || `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`;}
 
 export function normalize(value) {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('fr');
