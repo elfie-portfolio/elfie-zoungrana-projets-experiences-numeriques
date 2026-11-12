@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f3f1ec">
+<meta name="description" content="Datavisualisation interactive des stations Trilib' à Paris à partir de données publiques de la Ville de Paris.">
+<title>Où trier à Paris ? — Datavisualisation | Elfie.Z</title>
+<style>
+:root{--ink:#1c2923;--muted:#5b7066;--bg:#f3f1ec;--paper:#fff;--line:#dce3da;--green:#246447;--mint:#dbebe0;--violet:#6949af;--coral:#c8704b;--night:#132d21}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+a{color:var(--green);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8e70c6;outline-offset:3px}
+.wrap{max-width:1230px;margin:auto;padding:0 25px}
+header{background:var(--paper);border-bottom:1px solid var(--line)}nav{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:18px 0}.brand{font-size:23px;font-weight:900;text-decoration:none;letter-spacing:-.07em;color:var(--ink)}.brand span{color:var(--coral)}.back{font-size:13px;font-weight:650;text-decoration:none;border:1px solid var(--line);border-radius:100px;padding:10px 15px;color:var(--ink)}
+main{padding:42px 0 65px}.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green);margin:0 0 10px}.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;flex-wrap:wrap;margin-bottom:28px}.hero h1{font-size:clamp(40px,5.5vw,72px);line-height:1.04;letter-spacing:-.063em;margin:0 0 15px;font-weight:850}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--green)}.hero p{max-width:730px;margin:0;color:var(--muted);font-size:15px}.project-stamp{font-size:10px;color:var(--muted);font-weight:750;letter-spacing:.07em}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px 20px;min-width:0}.stat strong{font-size:clamp(28px,4vw,43px);letter-spacing:-.055em;line-height:1.1;display:block;font-variant-numeric:tabular-nums}.stat span{font-size:12px;color:var(--muted);display:block;margin-top:5px}.stat[data-highlight="6"] strong{color:var(--coral)}.stat[data-highlight="19"] strong{color:var(--violet)}
+.controls{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:13px 15px;margin-bottom:17px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid var(--line);border-radius:999px;background:#f9faf7;padding:9px 14px;font-size:12px;color:var(--ink);font-weight:700}.chip[aria-pressed="true"]{background:var(--night);border-color:var(--night);color:#fff}.pick{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700}.pick select{background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:9px;max-width:190px;color:var(--ink)}
+.dashboard{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(300px,1fr);gap:17px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;min-width:0}.panel-head{padding:22px 22px 10px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.panel-head h2{font-size:18px;letter-spacing:-.03em;margin:0}.panel-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.micro-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;white-space:nowrap}
+.map-stage{position:relative;margin:2px 16px 16px;border:1px solid #dbe4dd;border-radius:13px;overflow:hidden;background:linear-gradient(155deg,#e9f1ea 0%,#f5f7ef 70%)}.map-stage svg{display:block;width:100%;height:auto;aspect-ratio:950/610}.map-stage svg .gridline{stroke:#d5dfd6;stroke-width:1}.map-stage svg .axisline{stroke:#a8b8ab;stroke-width:1.4}.map-stage svg .tick{font:15px ui-sans-serif,system-ui;fill:#708678}.map-stage svg .station{cursor:pointer;stroke:#fff;stroke-width:1.25;transition:opacity .15s}.map-stage svg .station:hover,.map-stage svg .station:focus{stroke:#163323;stroke-width:3;outline:none}.map-stage svg .district-mark{fill:#fff;stroke:#7f9585;stroke-width:1.5}.map-stage svg .map-tag{font:700 18px ui-sans-serif,system-ui;fill:#2c4636}.map-stage svg .paris-tag{font:900 69px ui-sans-serif,system-ui;fill:#ccd8cd;letter-spacing:-.05em}
+.marker-tip{position:absolute;z-index:4;background:#1b3528;color:#fff;padding:10px 12px;font-size:12px;max-width:min(280px,80%);border-radius:10px;box-shadow:0 10px 40px #17392633;pointer-events:none}.marker-tip strong{display:block;font-weight:800}.marker-tip small{display:block;color:#cae6d1;font-size:11px;margin-top:3px}.marker-tip[hidden]{display:none}
+.legend{display:flex;align-items:center;gap:17px;flex-wrap:wrap;padding:2px 20px 17px;color:var(--muted);font-size:11px}.legend span{display:flex;align-items:center;gap:7px}.swatch{display:inline-block;width:11px;height:11px;border-radius:100%;background:#668d7c}.swatch.six{background:var(--coral)}.swatch.nineteen{background:var(--violet)}
+.bar-panel{padding-bottom:14px}.bar-list{padding:0 20px 16px;display:grid;gap:7px;max-height:620px;overflow:auto}.bar-row{appearance:none;background:transparent;border:1px solid transparent;text-align:left;border-radius:7px;display:grid;grid-template-columns:50px minmax(0,1fr) 30px;gap:8px;align-items:center;padding:4px 6px;color:var(--ink);font-size:12px}.bar-row:hover,.bar-row[aria-pressed="true"]{background:#f1f5ef;border-color:var(--line)}.bar-track{height:11px;border-radius:5px;background:#edf1ec;overflow:hidden}.bar-fill{height:100%;display:block;background:#6c9480;border-radius:5px;min-width:2px;transition:width .2s}.bar-fill.six{background:var(--coral)}.bar-fill.nineteen{background:var(--violet)}.bar-name,.bar-number{font-variant-numeric:tabular-nums}.bar-number{text-align:right;font-weight:800}.bar-note{margin:0 21px 6px;color:var(--muted);font-size:11px}
+.bottom{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:17px;margin-top:17px}.list-actions{display:flex;align-items:center;gap:10px;padding:0 20px 16px;flex-wrap:wrap}.list-actions input{min-width:170px;flex:1;border:1px solid var(--line);border-radius:9px;padding:11px;background:#fff;color:var(--ink)}.download{display:inline-block;background:#eaf2ec;border:1px solid #d9e5dd;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none;padding:11px 13px;color:var(--green)}.station-list{list-style:none;padding:0 20px 20px;margin:0;max-height:340px;overflow:auto}.station-list li{padding:10px 1px;border-top:1px solid var(--line);font-size:12px;display:flex;justify-content:space-between;gap:10px}.station-list strong{font-weight:700}.station-list small{white-space:nowrap;color:var(--muted)}.empty{font-size:13px;color:var(--muted)}
+.analysis{padding:0 24px 20px}.analysis h3{margin:14px 0 8px;font-size:15px}.analysis p{color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.66}.analysis strong{color:var(--ink)}.analysis .note{font-size:11px;border-left:3px solid var(--green);padding-left:12px}
+footer{padding:24px 0 45px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}footer p{max-width:830px}.status{font-size:12px;color:var(--muted);padding-bottom:9px}.status strong{color:var(--ink)}
+@media(max-width:880px){.dashboard,.bottom{grid-template-columns:1fr}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.bar-list{max-height:none;grid-template-columns:repeat(2,minmax(0,1fr))}.bar-row{grid-template-columns:34px minmax(0,1fr) 24px}.hero{align-items:flex-start}}
+@media(max-width:520px){.wrap{padding:0 14px}.hero h1{font-size:43px}.summary{gap:8px}.stat{padding:13px}.stat strong{font-size:29px}.stat span{font-size:11px}.bar-list{grid-template-columns:1fr}.panel-head{padding:17px}.map-stage{margin:3px 8px 10px}.controls{padding:12px}.chips{gap:6px}.chip{padding:8px 10px}.map-stage svg{min-height:280px}.legend{gap:9px;padding-inline:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="../index.html" aria-label="Retour à l'accueil du portfolio">elfie<span>.z</span></a><a class="back" href="../projets.html?categorie=data">← Mes projets · Data & visualisation</a></nav></div></header>
+<main class="wrap">
+<div class="hero">
+ <div><p class="eyebrow">Mini-projet personnel · Données publiques · Paris</p><h1>Où trier <em>à Paris ?</em></h1><p>Explorer les stations Trilib’ recensées comme étant en service dans les vingt arrondissements. Une carte de points, un classement interactif et un focus sur les 6e et 19e arrondissements.</p></div>
+ <div class="project-stamp">DATA STORY / CARTOGRAPHIE / HTML · CSS · JS</div>
+</div>
+<section class="summary" aria-label="Indicateurs clés">
+ <div class="stat"><strong id="n-stations">443</strong><span>Stations dans la sélection</span></div>
+ <div class="stat"><strong id="n-districts">20</strong><span>Arrondissements représentés</span></div>
+ <div class="stat" data-highlight="6"><strong>9</strong><span>Stations du 6e dans l’extraction</span></div>
+ <div class="stat" data-highlight="19"><strong>46</strong><span>Stations du 19e dans l’extraction</span></div>
+</section>
+<div class="controls" aria-label="Filtres des visualisations">
+ <div class="chips" role="group" aria-label="Sélection rapide">
+  <button class="chip" type="button" data-filter="all" aria-pressed="true">Tout Paris</button>
+  <button class="chip" type="button" data-filter="focus" aria-pressed="false">6e + 19e</button>
+  <button class="chip" type="button" data-filter="6" aria-pressed="false">6e uniquement</button>
+  <button class="chip" type="button" data-filter="19" aria-pressed="false">19e uniquement</button>
+ </div>
+ <label class="pick" for="district">Autre arrondissement <select id="district" aria-label="Choisir un arrondissement"><option value="all">Tous les arrondissements</option></select></label>
+</div>
+<p class="status" id="selection-status" role="status">Vue d’ensemble : 443 stations réparties dans 20 arrondissements.</p>
+<div class="dashboard">
+ <section class="panel" aria-labelledby="map-title"><div class="panel-head"><div><h2 id="map-title">Carte des stations</h2><p>Points positionnés selon leur latitude et leur longitude</p></div><span class="micro-label">Vue géographique</span></div>
+ <div class="map-stage" id="map-stage">
+   <svg id="station-map" viewBox="0 0 950 610" role="img" aria-label="Répartition géographique interactive des stations Trilib' à Paris"></svg>
+   <div class="marker-tip" id="marker-tip" hidden></div>
+ </div>
+ <div class="legend"><span><i class="swatch"></i>Autres arrondissements</span><span><i class="swatch six"></i>6e</span><span><i class="swatch nineteen"></i>19e</span></div>
+ </section>
+ <section class="panel bar-panel" aria-labelledby="bars-title"><div class="panel-head"><div><h2 id="bars-title">Stations par arrondissement</h2><p>Nombre de stations dans l’extraction · Cliquez pour filtrer</p></div><span class="micro-label">20 arr.</span></div><div class="bar-list" id="bar-list"></div><p class="bar-note">Le nombre de stations ne constitue pas un indicateur de fréquentation ni un classement de la qualité du tri.</p></section>
+</div>
+<div class="bottom">
+ <section class="panel" aria-labelledby="addresses-title"><div class="panel-head"><div><h2 id="addresses-title">Explorer les adresses</h2><p id="address-status">443 stations · recherche dans la sélection</p></div></div>
+   <div class="list-actions"><input id="address-search" type="search" placeholder="Rechercher une rue ou une adresse…" aria-label="Rechercher parmi les stations filtrées"><a class="download" href="./trilib-stations.csv" download>Télécharger les données CSV</a></div>
+   <ul class="station-list" id="station-list"></ul>
+ </section>
+ <section class="panel" aria-labelledby="analysis-title"><div class="panel-head"><div><h2 id="analysis-title">Ce que montrent les données</h2><p>Lecture critique pour comprendre, sans surinterpréter</p></div></div>
+   <div class="analysis"><h3>Une répartition hétérogène</h3>
+   <p>Dans cette extraction, <strong>443 stations</strong> sont indiquées en service à Paris. Le <strong>13e arrondissement (47)</strong> est le plus représenté, devant le <strong>12e et le 19e (46 chacun)</strong>. Le <strong>6e en compte 9</strong>.</p>
+   <h3>Focus 6e et 19e</h3><p>Ces deux arrondissements ont été retenus pour faire le lien avec des territoires étudiés pendant un service civique. Ensemble, ils regroupent <strong>55 stations</strong> dans cette extraction. Le projet utilise exclusivement les données publiques, indépendamment des documents internes de l’association.</p>
+   <h3>Interpréter avec prudence</h3><p>Les écarts bruts ne tiennent compte ni de la population, ni de la superficie, ni des besoins réels, ni de l’ensemble des dispositifs de collecte. Le jeu est un <strong>instantané</strong> : il ne décrit pas nécessairement les installations actuelles.</p>
+   <p class="note">Cartographie sans fond de rues : les points utilisent les coordonnées publiques réelles, projetées sur un repère géographique simplifié. Il ne s’agit pas d’un plan de circulation.</p></div>
+ </section>
+</div>
+</main>
+<footer><div class="wrap"><p><strong>Source des données :</strong> <a href="https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/" target="_blank" rel="noopener noreferrer">Ville de Paris — Stations Trilib’ (Paris Data)</a>, Licence Ouverte (Etalab). Données préparées dans Google Sheets puis intégrées comme une extraction statique de 443 stations signalées en service. Une ligne par identifiant de station.</p><p><strong>Réalisation :</strong> projet personnel d’Elfie Zoungrana · Visualisations conçues avec HTML, CSS, JavaScript et SVG, sans dépendance à Looker Studio ni à Flourish.</p></div></footer>
+<script type="module">
+import { stations } from "./trilib-data.mjs?v=1";
+const NS="http://www.w3.org/2000/svg";
+const base=stations.map(function(r){return{id:r[0],address:r[1],district:r[2],lat:r[3],lon:r[4]}});
+const countBy={};for(const s of base){countBy[s.district]=(countBy[s.district]||0)+1}
+const code=function(n){return String(n).padStart(2,"0")};
+const label=function(n){return n===1?"1er":String(n)+"e"};
+const $=function(id){return document.getElementById(id)};
+const selector=$("district");
+for(let n=1;n<=20;n++){let o=document.createElement("option");o.value=String(n);o.textContent=label(n)+" arrondissement";selector.append(o)}
+let choice="all";
+const colors={normal:"#638c77",six:"#c8704b",nineteen:"#6949af"};
+function visible(){return base.filter(function(s){return choice==="all"||(choice==="focus"&&(s.district===6||s.district===19))||String(s.district)===choice})}
+function selectionName(){return choice==="all"?"Tout Paris":choice==="focus"?"6e et 19e arrondissements":label(Number(choice))+" arrondissement"}
+function setChoice(value){choice=value;document.querySelectorAll("[data-filter]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.filter===value))});selector.value=value==="focus"?"all":value;render()}
+document.querySelectorAll("[data-filter]").forEach(function(b){b.addEventListener("click",function(){setChoice(b.dataset.filter)})});
+selector.addEventListener("change",function(){setChoice(selector.value)});
+const pad={x:60,y:42},w=950,h=610;
+const xs=base.map(function(s){return s.lon}),ys=base.map(function(s){return s.lat});
+const lonMin=Math.min(...xs)-.009,lonMax=Math.max(...xs)+.009,latMin=Math.min(...ys)-.007,latMax=Math.max(...ys)+.007;
+function coord(s){return{x:pad.x+(s.lon-lonMin)/(lonMax-lonMin)*(w-2*pad.x),y:pad.y+(latMax-s.lat)/(latMax-latMin)*(h-2*pad.y)}}
+function el(name,attrs){const node=document.createElementNS(NS,name);for(const k in attrs)node.setAttribute(k,String(attrs[k]));return node}
+function drawMap(rows){const svg=$("station-map");svg.replaceChildren();const tip=$("marker-tip");tip.hidden=true;
+ for(let i=0;i<9;i++){const x=pad.x+i*(w-pad.x*2)/8;svg.append(el("line",{x1:x,y1:pad.y,x2:x,y2:h-pad.y,class:"gridline"}))}
+ for(let i=0;i<7;i++){const y=pad.y+i*(h-pad.y*2)/6;svg.append(el("line",{x1:pad.x,y1:y,x2:w-pad.x,y2:y,class:"gridline"}))}
+ svg.append(el("text",{x:490,y:320,"text-anchor":"middle",class:"paris-tag"})).textContent="PARIS";
+ for(const s of rows){const p=coord(s);const c=el("circle",{cx:p.x,cy:p.y,r:choice==="all"?4.1:5.2,fill:s.district===6?colors.six:s.district===19?colors.nineteen:colors.normal,class:"station",tabindex:"0","aria-label":s.address+", "+label(s.district)+" arrondissement"});const detail=function(){const wrap=$("map-stage").getBoundingClientRect(),rc=c.getBoundingClientRect();let left=rc.left-wrap.left+9,top=rc.top-wrap.top-70;tip.replaceChildren();let strong=document.createElement("strong");strong.textContent=s.address;let small=document.createElement("small");small.textContent=label(s.district)+" arrondissement · Station "+s.id;tip.append(strong,small);tip.hidden=false;const tw=tip.getBoundingClientRect().width;tip.style.left=Math.max(5,Math.min(left,wrap.width-tw-8))+"px";tip.style.top=Math.max(6,top)+"px"};c.addEventListener("mouseenter",detail);c.addEventListener("focus",detail);c.addEventListener("mouseleave",function(){tip.hidden=true});c.addEventListener("blur",function(){tip.hidden=true});c.addEventListener("click",function(){document.querySelector("#address-search").value=s.address;showAddresses(rows);$("addresses-title").scrollIntoView({behavior:"smooth",block:"center"})});svg.append(c)}
+ for(const n of [6,19]){if(!rows.some(function(s){return s.district===n}))continue;const subset=rows.filter(function(s){return s.district===n});const cx=subset.reduce(function(a,b){return a+coord(b).x},0)/subset.length,cy=subset.reduce(function(a,b){return a+coord(b).y},0)/subset.length;svg.append(el("circle",{cx:cx+25,cy:cy-23,r:25,class:"district-mark"}));const txt=el("text",{x:cx+25,y:cy-17,"text-anchor":"middle",class:"map-tag"});txt.textContent=label(n);svg.append(txt)}
+ svg.append(el("text",{x:100,y:590,class:"tick"})).textContent="← Ouest";svg.append(el("text",{x:755,y:590,class:"tick"})).textContent="Est →";
+}
+function showBars(){const box=$("bar-list");box.replaceChildren();const ordered=Object.keys(countBy).map(Number).sort(function(a,b){return countBy[b]-countBy[a]||a-b});for(const n of ordered){const row=document.createElement("button");row.type="button";row.className="bar-row";row.setAttribute("aria-pressed",String(String(n)===choice));row.setAttribute("aria-label",label(n)+" arrondissement, "+countBy[n]+" stations, filtrer ce secteur");const nam=document.createElement("span");nam.className="bar-name";nam.textContent=label(n);const track=document.createElement("span");track.className="bar-track";const fill=document.createElement("span");fill.className="bar-fill"+(n===6?" six":n===19?" nineteen":"");fill.style.width=(countBy[n]/47*100).toFixed(2)+"%";track.append(fill);const number=document.createElement("span");number.className="bar-number";number.textContent=countBy[n];row.append(nam,track,number);row.addEventListener("click",function(){setChoice(String(n))});box.append(row)}}
+function showAddresses(rows){const query=$("address-search").value.trim().toLocaleLowerCase("fr");const found=rows.filter(function(s){return s.address.toLocaleLowerCase("fr").includes(query)||String(s.id).includes(query)}).sort(function(a,b){return a.district-b.district||a.address.localeCompare(b.address,"fr")});$("address-status").textContent=found.length+" résultat(s) parmi "+rows.length+" stations sélectionnées";const list=$("station-list");list.replaceChildren();if(!found.length){let li=document.createElement("li");li.className="empty";li.textContent="Aucune adresse trouvée.";list.append(li);return}for(const s of found.slice(0,80)){const li=document.createElement("li"),strong=document.createElement("strong"),small=document.createElement("small");strong.textContent=s.address;small.textContent=label(s.district)+" · #"+s.id;li.append(strong,small);list.append(li)}if(found.length>80){const more=document.createElement("li");more.className="empty";more.textContent="80 premières adresses affichées. Affinez votre recherche.";list.append(more)}}
+function render(){const rows=visible();$("n-stations").textContent=rows.length;$("n-districts").textContent=new Set(rows.map(function(s){return s.district})).size;$("selection-status").replaceChildren();const lead=document.createElement("strong");lead.textContent=selectionName()+" : ";$("selection-status").append(lead,document.createTextNode(rows.length+" stations dans "+new Set(rows.map(function(s){return s.district})).size+" arrondissement(s)."));$("address-search").value="";drawMap(rows);showBars();showAddresses(rows)}
+$("address-search").addEventListener("input",function(){showAddresses(visible())});
+render();
+</script>
+</body>
+</html>
