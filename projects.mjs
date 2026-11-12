@@ -4,19 +4,40 @@ export const categories = {
   pedagogie: 'Pédagogie & EdTech',
   design: 'UX/UI Design & maquettes',
   web: 'Sites web & projets numériques',
-  communication: 'Communication & création visuelle'
+  communication: 'Communication & création visuelle',
+  data: 'Data & visualisation'
 };
 
 export const pillars = [
   {id:'pedagogie',number:'01',short:'Pédagogie & EdTech',title:categories.pedagogie,description:'Créer des outils qui donnent envie d’apprendre.',icon:'star'},
   {id:'design',number:'02',short:'UX/UI & maquettes',title:categories.design,description:'Comprendre les besoins et imaginer des interfaces faciles à utiliser.',icon:'folder'},
   {id:'web',number:'03',short:'Sites web',title:categories.web,description:'Organiser les pages et créer des sites web.',icon:'file'},
-  {id:'communication',number:'04',short:'Communication',title:categories.communication,description:'Créer des textes et des visuels adaptés aux personnes à qui l’on s’adresse.',icon:'right'}
+  {id:'communication',number:'04',short:'Communication',title:categories.communication,description:'Créer des textes et des visuels adaptés aux personnes à qui l’on s’adresse.',icon:'right'},
+  {id:'data',number:'05',short:'Data & visualisation',title:categories.data,description:'Comprendre les données et les rendre lisibles.',icon:'file'}
 ];
 
 export const projects = [
   {
-    id: 'femmes-tech', title: 'Femmes & Tech', category: 'web', year: '',
+    id: 'trilib', title: 'Où trier à Paris ?', category: 'data', year: '',
+    url: '/elfie-zoungrana-projets-experiences-numeriques/data/trilib.html',
+    type: 'Mini-projet personnel · Cartographie de données publiques',
+    short: 'Explorer 443 stations Trilib’ dans les vingt arrondissements de Paris, avec une carte et des filtres interactifs.',
+    lead: 'Localiser et comparer les stations Trilib’ recensées à Paris.',
+    tags: ['Datavisualisation', 'Cartographie', 'Open data'],
+    context: 'Mini-projet personnel réalisé à partir des données ouvertes de la Ville de Paris. Le jeu de données préparé dans Google Sheets contient 443 stations signalées en service ; les 6e et 19e arrondissements font l’objet d’un focus.',
+    contribution: 'Préparation des données publiques, contrôle des identifiants, traitement des coordonnées, création des graphiques et filtres interactifs, analyse et documentation des limites.',
+    approach: ['Vérifier les données et ne conserver que les stations signalées en service', 'Mettre en forme les coordonnées et comparer la répartition par arrondissement', 'Rendre la cartographie interactive et expliquer les limites de l’analyse'],
+    takeaway: 'Les écarts de nombre de stations ne prouvent pas à eux seuls une différence d’accès au tri : superficie, population et autres équipements doivent aussi être étudiés.',
+    skills: ['Cartographie de données', 'Datavisualisation', 'Préparation de données', 'Développement web', 'Analyse critique'],
+    tools: ['Google Sheets', 'HTML', 'CSS', 'JavaScript', 'SVG'],
+    facts: [{label:'Source',value:'Ville de Paris · Paris Data'},{label:'Stations',value:'443 dans l’extraction publique'},{label:'Focus',value:'6e et 19e arrondissements'}],
+    resources: [
+      {label:'Explorer le tableau de bord',info:'Carte, filtres et classement',url:'/elfie-zoungrana-projets-experiences-numeriques/data/trilib.html',kind:'web'},
+      {label:'Consulter les données sources',info:'Paris Data · Open data',url:'https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/',kind:'web'}
+    ]
+  },
+  {
+    id: 'femmes-tech', title: 'Femmes & Tech', category: 'data', year: '',
     url: '/elfie-zoungrana-projets-experiences-numeriques/data/femmes-tech.html',
     type: 'Mini-projet personnel · Datavisualisation interactive',
     short: 'Explorer la place des femmes dans les professions du numérique en France et parmi les spécialistes TIC en Europe.',
@@ -991,12 +1012,12 @@ export const projects = [
   }
 ];
 
-const order=['happy-learning','nextstep','femmes-tech','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
+const order=['happy-learning','nextstep','trilib','femmes-tech','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
 projects.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
 const confirmedTools={nextstep:['Figma'],penzi:['Figma'],'zero-waste':['Canva','Google Workspace','My Maps','Slack'],wonderball:['Figma']};
 for(const project of projects){project.tools??=confirmedTools[project.id]||[];project.tags??=project.skills.slice(0,3);}
 
-export const featuredProjectIds = ['femmes-tech','happy-learning','nextstep','cauvaillac','zero-waste'];
+export const featuredProjectIds = ['trilib','femmes-tech','happy-learning','nextstep','cauvaillac','zero-waste'];
 
 export function projectUrl(project){return project.url || `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`;}
 
