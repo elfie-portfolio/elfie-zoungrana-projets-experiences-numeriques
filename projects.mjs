@@ -996,7 +996,7 @@ projects.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
 const confirmedTools={nextstep:['Figma'],penzi:['Figma'],'zero-waste':['Canva','Google Workspace','My Maps','Slack'],wonderball:['Figma']};
 for(const project of projects){project.tools??=confirmedTools[project.id]||[];project.tags??=project.skills.slice(0,3);}
 
-export const featuredProjectIds = ['happy-learning','nextstep','cauvaillac','zero-waste'];
+export const featuredProjectIds = ['femmes-tech','happy-learning','nextstep','cauvaillac','zero-waste'];
 
 export function projectUrl(project){return project.url || `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`;}
 
