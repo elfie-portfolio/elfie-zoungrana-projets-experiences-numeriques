@@ -181,6 +181,24 @@ export const projects = [
   },
   {
     "id": "zero-waste",
+    "dataWork": {
+      "eyebrow": "DONNÉES TERRITORIALES",
+      "title": "Des données pour préparer les actions locales",
+      "items": [
+        {
+          "title": "Recenser et cartographier",
+          "text": "Pour les projets Territoires Zéro Déchet, j’ai recensé des structures dans les 6e et 19e arrondissements : écoles, commerces et associations, entre autres. J’ai organisé les adresses et les catégories dans Google Sheets, puis géolocalisé les structures dans Google My Maps."
+        },
+        {
+          "title": "Suivre les actions et les contacts",
+          "text": "J’ai préparé des tableaux de prospection et de suivi pour retrouver les structures par type et par secteur, repérer des partenaires à contacter et regrouper les informations utiles aux bilans."
+        },
+        {
+          "title": "Restituer les chiffres clés",
+          "text": "Pour les 10 ans, j’ai mis en forme des chiffres de l’association dans des visuels destinés au public : plus de 16 000 personnes sensibilisées depuis sa création et 7 370 € collectés sur l’ensemble de la campagne de dons."
+        }
+      ]
+    },
     "title": "Zero Waste Paris",
     "category": "communication",
     "year": "",
@@ -813,6 +831,24 @@ export const projects = [
     resources:[{label:'Ouvrir la maquette Figma',info:'Maquette du site vitrine · Version actuelle',url:'https://www.figma.com/design/zXebZKGCqpcCDRMcUJn12i/Moina-Accesoires--maquette-mobile?m=auto&t=FXqptfitiXI7gjhq-6',kind:'figma'}]
   },
   {
+    dataWork: {
+      "eyebrow": "VEILLE MÉDIATIQUE",
+      "title": "Des articles de presse à la revue hebdomadaire",
+      "items": [
+        {
+          "title": "Collecter",
+          "text": "Chaque semaine, j’ai repéré avec LuQi / Cision les articles qui mentionnaient l’Université Paris 8."
+        },
+        {
+          "title": "Sélectionner",
+          "text": "J’ai lu les retombées pour retenir les articles pertinents pour l’université et son service communication."
+        },
+        {
+          "title": "Synthétiser",
+          "text": "J’ai regroupé les articles retenus et leurs informations principales dans une revue de presse hebdomadaire, soumise à la validation de l’équipe."
+        }
+      ]
+    },
     id:'paris8-communication',title:'Université Paris 8',category:'communication',year:'2025',
     type:'Stage · Rédactrice en communication',status:'Communication institutionnelle · Mai–juillet 2025',
     short:'Articles, contenus web et affiches pour la fête des personnels, au service communication de Paris 8.',
