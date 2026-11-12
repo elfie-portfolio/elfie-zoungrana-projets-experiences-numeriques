@@ -5,6 +5,7 @@ const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&am
 
 export function renderArt(project) {
   switch (project.id) {
+    case 'ou-trier-a-paris': return `<div class="project-art" aria-hidden="true"><img src="/elfie-zoungrana-projets-experiences-numeriques/assets/trilib/comparaison.svg" width="900" height="480" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>`;
     case 'happy-learning': return `<div class="project-art art-happy-learning" aria-hidden="true"><span class="art-eyebrow"><span>ÉCOLE DE DEMAIN · INNOVATECH</span></span><span class="happy-title">Happy<br><em>Learning.</em><small>APPRENDRE MIEUX.<br>VIVRE MIEUX.</small></span><img class="happy-phone" src="/elfie-zoungrana-projets-experiences-numeriques/assets/happy-learning/welcome.webp" width="393" height="852" alt="" loading="lazy"></div>`;
     case 'nextstep': return `<div class="project-art art-nextstep" aria-hidden="true"><span class="art-eyebrow"><span>CONCEPTION & PROMOTION · L3</span><span>FIGMA</span></span><div class="nextstep-orbit"></div><span class="nextstep-title">Next<em>Step.</em></span><span class="nextstep-tagline">Un mentor.<br>Un nouveau départ.<small>NUMÉRIQUE × ACCOMPAGNEMENT</small></span><img class="nextstep-phone" src="/elfie-zoungrana-projets-experiences-numeriques/assets/nextstep/welcome.webp" width="393" height="852" alt="" loading="lazy"></div>`;
     case 'penzi': return `<div class="project-art art-penzi art-penzi-mobile" aria-hidden="true"><span class="art-eyebrow"><span>OUTILS NUMÉRIQUES · L2</span><span>FIGMA</span></span><span class="penzi-orbit"></span><span class="penzi-art-title">Penzi.</span><span class="penzi-art-caption">Des intentions<br>claires.<small>RENCONTRES × DISCRÉTION</small></span><img class="penzi-phone" src="/elfie-zoungrana-projets-experiences-numeriques/assets/penzi/welcome.webp" width="393" height="852" alt="" loading="lazy"></div>`;
@@ -67,6 +68,7 @@ function initialize() {
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   const page = document.body.dataset.page || 'home';
+  document.querySelectorAll('.nav-count').forEach(element => { element.textContent = String(projects.length).padStart(2,'0'); });
   const grid = $('#project-grid');
   const search = $('#project-search');
   const toast = $('#toast');

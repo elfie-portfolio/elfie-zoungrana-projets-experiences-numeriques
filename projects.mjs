@@ -16,6 +16,72 @@ export const pillars = [
 
 export const projects = [
   {
+    "id": "ou-trier-a-paris",
+    "title": "Où trier à Paris ?",
+    "category": "web",
+    "year": "",
+    "type": "Mini-projet personnel · Datavisualisation",
+    "short": "Cartographier les stations Trilib’ et comparer leur répartition dans les 20 arrondissements de Paris.",
+    "lead": "Une carte interactive et un graphique pour explorer les stations Trilib’ en service.",
+    "status": "Tableau de bord interactif · Données ouvertes",
+    "context": "Où se trouvent les stations Trilib’ et comment se répartissent-elles entre les arrondissements ? Ce mini-projet prolonge mon intérêt pour la cartographie territoriale à partir du jeu de données public de la Ville de Paris.",
+    "contribution": "Préparation des données dans Google Sheets et mise en forme d’un tableau de bord dans Looker Studio : carte par coordonnées, filtre par arrondissement, compteur et graphique de comparaison.",
+    "approach": [
+      "Ne conserver que les stations signalées en service et vérifier qu’un identifiant correspond à une station.",
+      "Harmoniser le champ arrondissement et préparer les coordonnées dans Google Sheets pour afficher les points sur la carte.",
+      "Compter les stations par arrondissement et tester le filtre sur le 6ᵉ et le 19ᵉ."
+    ],
+    "takeaway": "Le 19ᵉ compte 46 stations et le 6ᵉ en compte 9 dans cet extrait. Ensemble, ils représentent 55 des 443 stations, soit 12,4 %. Ces nombres décrivent le parc recensé. Ils ne renseignent ni sur la fréquentation ni sur la qualité du tri ; sans population ni superficie, ils ne mesurent pas non plus la couverture relative.",
+    "skills": [
+      "Préparation de données",
+      "Cartographie",
+      "Datavisualisation",
+      "Lecture critique"
+    ],
+    "tools": [
+      "Google Sheets",
+      "Looker Studio"
+    ],
+    "tags": [
+      "Données ouvertes",
+      "Cartographie",
+      "Datavisualisation"
+    ],
+    "deliverables": "Un tableau de bord filtrable et une comparaison des 20 arrondissements.",
+    "facts": [
+      {
+        "label": "Paris",
+        "value": "443 stations en service"
+      },
+      {
+        "label": "6ᵉ arrondissement",
+        "value": "9 stations"
+      },
+      {
+        "label": "19ᵉ arrondissement",
+        "value": "46 stations"
+      }
+    ],
+    "image": "/elfie-zoungrana-projets-experiences-numeriques/assets/trilib/comparaison.svg",
+    "imageWidth": 900,
+    "imageHeight": 480,
+    "imageAlt": "Paris : 443 stations Trilib’ en service. Le 6ᵉ en compte 9 et le 19ᵉ en compte 46.",
+    "caption": "Comparaison en nombre de stations. Source : Paris Data, Ville de Paris, Licence Ouverte.",
+    "primaryAction": {
+      "label": "Ouvrir le tableau de bord",
+      "info": "Looker Studio",
+      "url": "https://datastudio.google.com/reporting/a9ec192f-d968-4e28-9530-e701db8a2a8c/page/tEnnC"
+    },
+    "resources": [
+      {
+        "label": "Consulter les données ouvertes",
+        "info": "Ville de Paris · Licence Ouverte",
+        "url": "https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/",
+        "kind": "web"
+      }
+    ]
+  },
+  {
     id: 'nextstep', title: 'NextStep', category: 'design', year: '',
     type: 'Projet universitaire en binôme · Licence 3',
     short: 'Imaginer une application pour trouver un mentor dans le numérique et réfléchir à la façon de la faire connaître.',
@@ -971,7 +1037,7 @@ export const projects = [
   }
 ];
 
-const order=['happy-learning','nextstep','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
+const order=['ou-trier-a-paris','happy-learning','nextstep','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
 projects.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
 const confirmedTools={nextstep:['Figma'],penzi:['Figma'],'zero-waste':['Canva','Google Workspace','My Maps','Slack'],wonderball:['Figma']};
 for(const project of projects){project.tools??=confirmedTools[project.id]||[];project.tags??=project.skills.slice(0,3);}
