@@ -331,3 +331,22 @@
 .femmes-art-metrics small{display:block;margin-top:5px;font-size:9px;letter-spacing:.055em;line-height:1.4;font-weight:650}
 .femmes-art-footer{font-size:10px;letter-spacing:.12em;font-weight:750;color:#463466;position:relative;z-index:1;margin-top:15px}
 @media(max-width:480px){.art-femmes-tech{min-height:270px;padding:17px}.femmes-art-intro{font-size:49px}.femmes-art-metrics small{font-size:8px}}
+
+
+/* Cinquième domaine : Data & visualisation */
+.pillar-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.pillar-card{padding-inline:16px}
+.pillar-card h3{font-size:19px}
+.pillar-data{--pillar-color:#a47ac8}
+.desktop-folders{gap:0}
+.folder-shortcut{width:19.5%;min-width:0}
+.folder-shortcut span{font-size:8px;white-space:normal;overflow-wrap:anywhere;text-align:center;line-height:1.3}
+.folder-shortcut:nth-child(5) .folder-icon{fill:#cfbedf}
+.art-trilib{padding:22px 25px;background:linear-gradient(140deg,#e6f2e7,#f4e9dd 78%);color:#173f2b;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;min-height:300px}
+.trilib-art-heading{font-size:clamp(36px,4vw,55px);line-height:.94;font-weight:850;letter-spacing:-.065em;position:relative;z-index:2;margin-top:65px}
+.trilib-art-heading em{font-family:Georgia,serif;font-weight:400;color:#a7583d}
+.trilib-art-map{position:absolute;width:66%;right:-8px;bottom:12px;max-height:200px;opacity:.92}
+.trilib-art-footer{font-size:10px;letter-spacing:.08em;font-weight:700;z-index:2;position:relative;align-self:flex-start;background:#fffdf5da;padding:9px 11px;border-radius:7px}
+@media(max-width:1130px){.pillar-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pillar-card+.pillar-card{border-left:1px solid var(--line)}.pillar-card{border-bottom:1px solid var(--line)}}
+@media(max-width:720px){.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pillar-card{min-height:195px}.desktop-folders{left:0;right:0;gap:0}.folder-shortcut{width:20%;padding-inline:1px;min-width:0}.folder-icon{max-width:37px}.folder-shortcut span{font-size:7px}}
+@media(max-width:440px){.pillar-grid{grid-template-columns:1fr}.pillar-card{min-height:145px}.folder-shortcut span{font-size:6.5px}.trilib-art-heading{font-size:43px}}
