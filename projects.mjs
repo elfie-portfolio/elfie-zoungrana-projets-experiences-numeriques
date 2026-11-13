@@ -19,7 +19,7 @@ export const pillars = [
 export const projects = [
   {
     id: 'trilib', title: 'Où trier à Paris ?', category: 'data', year: '',
-    url: '/elfie-zoungrana-projets-experiences-numeriques/data/trilib.html',
+    url: '/elfie-zoungrana-projets-experiences-numeriques/projets/ou-trier-a-paris.html',
     type: 'Mini-projet personnel · Cartographie de données publiques',
     short: 'Explorer 443 stations Trilib’ dans les vingt arrondissements de Paris, avec une carte et des filtres interactifs.',
     lead: 'Localiser et comparer les stations Trilib’ recensées à Paris.',
@@ -38,7 +38,7 @@ export const projects = [
   },
   {
     id: 'femmes-tech', title: 'Femmes & Tech', category: 'data', year: '',
-    url: '/elfie-zoungrana-projets-experiences-numeriques/data/femmes-tech.html',
+    url: '/elfie-zoungrana-projets-experiences-numeriques/projets/femmes-tech.html',
     type: 'Mini-projet personnel · Datavisualisation interactive',
     short: 'Explorer la place des femmes dans les professions du numérique en France et parmi les spécialistes TIC en Europe.',
     lead: 'Des données publiques pour mieux comprendre la place des femmes dans la tech.',
