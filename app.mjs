@@ -67,8 +67,8 @@ export function renderDetail(project) {
 
 function initialize() {
   const $ = selector => document.querySelector(selector);
-  const $ = selector => [...document.querySelectorAll(selector)];
-  $('[class~="nav-count"]').forEach(el => { el.textContent = String(projects.length); });
+  const $$ = selector => [...document.querySelectorAll(selector)];
+  $$('[class~="nav-count"]').forEach(el => { el.textContent = String(projects.length); });
   const page = document.body.dataset.page || 'home';
   const grid = $('#project-grid');
   const search = $('#project-search');
