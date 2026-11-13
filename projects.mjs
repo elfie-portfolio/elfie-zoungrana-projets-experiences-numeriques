@@ -19,7 +19,7 @@ export const pillars = [
 export const projects = [
   {
     id: 'trilib', title: 'Où trier à Paris ?', category: 'data', year: '',
-    url: '/elfie-zoungrana-projets-experiences-numeriques/projets/ou-trier-a-paris.html',
+    url: '/elfie-zoungrana-projets-experiences-numeriques/projets/ou-trier-a-paris.html?v=fiche-20261113',
     type: 'Mini-projet personnel · Cartographie de données publiques',
     short: 'Explorer 443 stations Trilib’ dans les vingt arrondissements de Paris, avec une carte et des filtres interactifs.',
     lead: 'Localiser et comparer les stations Trilib’ recensées à Paris.',
