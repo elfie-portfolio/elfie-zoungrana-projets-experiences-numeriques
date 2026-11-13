@@ -1,4 +1,4 @@
-import { projects, categories, featuredProjectIds, filterProjects, projectFromHash, projectUrl } from './projects.mjs?v=data-20261112';
+import { projects, categories, featuredProjectIds, filterProjects, projectFromHash, projectUrl } from './projects.mjs?v=portfolio-qa-20261113';
 
 const icon = name => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
