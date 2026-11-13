@@ -34,8 +34,8 @@ Si le nom du dépôt ou l’hébergement change, ce chemin doit être adapté da
 
 - `index.html`, `projets.html`, `parcours.html`, `a-propos.html` : pages principales.
 - `projets/` : les 12 fiches d’origine et les 2 nouvelles fiches « Femmes & Tech » et « Où trier à Paris ? ».
-- `data/femmes-tech.html` : projet interactif « Femmes & Tech » (Insee et Eurostat).
-- `data/trilib.html` : projet « Où trier à Paris ? », carte SVG et filtres d’arrondissements.
+- `data/femmes-tech.html` : visualisation interactive « Femmes & Tech » (Insee et Eurostat), reliée à `projets/femmes-tech.html`.
+- `data/trilib.html` : visualisation « Où trier à Paris ? », carte SVG et filtres d’arrondissements, reliée à `projets/ou-trier-a-paris.html`.
 - `data/trilib-data.mjs` et `data/trilib-stations.csv` : extraction de 443 stations Trilib’ à partir des données ouvertes de la Ville de Paris.
 - `assets/` : images, documents, vidéo et polices.
 - `projects.mjs` : données, catégories et liens des 14 projets.
