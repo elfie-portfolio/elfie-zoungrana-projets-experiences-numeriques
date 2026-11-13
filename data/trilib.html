@@ -35,7 +35,7 @@ nav{flex-wrap:wrap}
 .nav-links a[aria-current="page"]{color:var(--green);font-weight:750}
 .nav-links a:hover{text-decoration:underline}
 @media(max-width:740px){nav{gap:9px;padding:13px 0}.nav-links{width:100%;justify-content:flex-start;gap:8px 12px;font-size:12px}.back{padding:7px 10px}}
-.skip-dashboard{position:absolute;left:-9999px;top:0;z-index:50;background:white;padding:10px;color:var(--ink)}.skip-dashboard:focus{left:10px}</style>
+.skip-dashboard{position:absolute;left:-9999px;top:0;z-index:50;background:white;padding:10px;color:var(--ink)}.skip-dashboard:focus{left:10px}.hero-aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px}.case-link{background:var(--night);color:#fff;text-decoration:none;padding:11px 16px;border-radius:9px;font-size:13px;font-weight:750}.case-link:hover{background:var(--green)}@media(max-width:760px){.hero-aside{align-items:flex-start}}</style>
 </head>
 <body>
 <a class="skip-dashboard" href="#contenu">Aller au contenu</a>
@@ -43,7 +43,7 @@ nav{flex-wrap:wrap}
 <main class="wrap" id="contenu">
 <div class="hero">
  <div><p class="eyebrow">Mini-projet personnel · Données publiques · Paris</p><h1>Où trier <em>à Paris ?</em></h1><p>Explorer les stations Trilib’ recensées comme étant en service dans les vingt arrondissements. Une carte de points, un classement interactif et un focus sur les 6e et 19e arrondissements.</p></div>
- <div class="project-stamp">DATA STORY / CARTOGRAPHIE / HTML · CSS · JS</div>
+ <div class="hero-aside"><div class="project-stamp">DATA STORY / CARTOGRAPHIE / HTML · CSS · JS</div><a class="case-link" href="../projets/ou-trier-a-paris.html">Voir la fiche complète du projet <span aria-hidden="true">↗</span></a></div>
 </div>
 <section class="summary" aria-label="Indicateurs clés">
  <div class="stat"><strong id="n-stations">443</strong><span>Stations dans la sélection</span></div>
