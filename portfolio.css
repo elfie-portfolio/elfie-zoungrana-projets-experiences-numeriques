@@ -350,3 +350,30 @@
 @media(max-width:1130px){.pillar-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pillar-card+.pillar-card{border-left:1px solid var(--line)}.pillar-card{border-bottom:1px solid var(--line)}}
 @media(max-width:720px){.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pillar-card{min-height:195px}.desktop-folders{left:0;right:0;gap:0}.folder-shortcut{width:20%;padding-inline:1px;min-width:0}.folder-icon{max-width:37px}.folder-shortcut span{font-size:7px}}
 @media(max-width:440px){.pillar-grid{grid-template-columns:1fr}.pillar-card{min-height:145px}.folder-shortcut span{font-size:6.5px}.trilib-art-heading{font-size:43px}}
+
+/* Keep reading and navigation comfortable on phones. */
+@media (max-width:700px) {
+  .hero-copy,.section-intro,.project-card,.detail-main,.detail-aside { min-width:0; }
+  .page-home .hero { grid-template-columns:minmax(0,1fr); }
+  .page-home .hero h1 { font-size:clamp(44px,15.5vw,92px); }
+  .header-actions .icon-button { width:44px; height:44px; }
+  .desktop-nav.is-open { max-height:calc(100dvh - 72px); overflow-y:auto; }
+  .project-toolbar { align-items:stretch; }
+  .project-toolbar .project-search { width:100%; max-width:none; min-height:48px; }
+  .project-search input { font-size:16px; }
+  .filter-button { font-size:12px; }
+  .card-type,.card-tags { font-size:10px; }
+  .card-description,.section-intro>p,.journey-item p:not(.journey-role,.journey-type) { font-size:15px; }
+  .project-page .detail-main p,.project-page .detail-main ol { font-size:16px; }
+  .project-page .detail-header h1,.card-title { overflow-wrap:anywhere; }
+  .project-page .detail-bottom { display:grid; grid-template-columns:minmax(0,1fr); gap:8px; }
+  .project-page .detail-next { justify-content:space-between; gap:12px; padding:12px 14px; border:1px solid var(--line); border-radius:6px; min-height:48px; font-size:13px; line-height:1.4; }
+  .project-page .detail-next .icon { flex:none; }
+  .project-page .detail-bottom button { font-size:11px; justify-self:start; }
+}
+@media (max-width:440px) {
+  .page-projects .project-toolbar .filters { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+  .page-projects .filter-button { white-space:normal; line-height:1.35; text-align:left; padding:8px; border-color:var(--line); }
+  .page-projects .filter-button.is-active { border-color:var(--ink); }
+  .page-home .hero-buttons .text-link { min-height:44px; display:inline-flex; align-items:center; }
+}

@@ -35,7 +35,18 @@ nav{flex-wrap:wrap}
 .nav-links a[aria-current="page"]{color:var(--green);font-weight:750}
 .nav-links a:hover{text-decoration:underline}
 @media(max-width:740px){nav{gap:9px;padding:13px 0}.nav-links{width:100%;justify-content:flex-start;gap:8px 12px;font-size:12px}.back{padding:7px 10px}}
-.skip-dashboard{position:absolute;left:-9999px;top:0;z-index:50;background:white;padding:10px;color:var(--ink)}.skip-dashboard:focus{left:10px}.hero-aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px}.case-link{background:var(--night);color:#fff;text-decoration:none;padding:11px 16px;border-radius:9px;font-size:13px;font-weight:750}.case-link:hover{background:var(--green)}@media(max-width:760px){.hero-aside{align-items:flex-start}}</style>
+.skip-dashboard{position:absolute;left:-9999px;top:0;z-index:50;background:white;padding:10px;color:var(--ink)}.skip-dashboard:focus{left:10px}.hero-aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px}.case-link{background:var(--night);color:#fff;text-decoration:none;padding:11px 16px;border-radius:9px;font-size:13px;font-weight:750}.case-link:hover{background:var(--green)}@media(max-width:760px){.hero-aside{align-items:flex-start}}
+@media (max-width:520px) {
+  .controls { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; }
+  .chips { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .chip,.bar-row,.pick select,.list-actions input,.download { min-height:44px; }
+  .pick { min-width:0; display:grid; gap:6px; }
+  .pick select,.list-actions input { width:100%; min-width:0; max-width:100%; font-size:16px; }
+  .list-actions { padding-inline:14px; }
+  .download,.case-link,.nav-links a { display:inline-flex; align-items:center; min-height:44px; }
+  .map-stage svg { min-height:0; }
+}
+</style>
 </head>
 <body>
 <a class="skip-dashboard" href="#contenu">Aller au contenu</a>
@@ -85,7 +96,7 @@ nav{flex-wrap:wrap}
  </section>
 </div>
 </main>
-<footer><div class="wrap"><p><a href="./femmes-tech.html">Découvrir aussi « Femmes &amp; Tech » →</a></p><p><strong>Source des données :</strong> <a href="https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/" target="_blank" rel="noopener noreferrer">Ville de Paris — Stations Trilib’ (Paris Data)</a>, Licence Ouverte (Etalab). Données préparées dans Google Sheets puis intégrées comme une extraction statique de 443 stations signalées en service. Une ligne par identifiant de station.</p><p><strong>Réalisation :</strong> projet personnel d’Elfie Zoungrana · Visualisations conçues avec HTML, CSS, JavaScript et SVG, sans dépendance à Looker Studio ni à Flourish.</p></div></footer>
+<footer><div class="wrap"><p><a href="./femmes-tech.html?v=mobile">Découvrir aussi « Femmes &amp; Tech » →</a></p><p><strong>Source des données :</strong> <a href="https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/" target="_blank" rel="noopener noreferrer">Ville de Paris — Stations Trilib’ (Paris Data)</a>, Licence Ouverte (Etalab). Données préparées dans Google Sheets puis intégrées comme une extraction statique de 443 stations signalées en service. Une ligne par identifiant de station.</p><p><strong>Réalisation :</strong> projet personnel d’Elfie Zoungrana · Visualisations conçues avec HTML, CSS, JavaScript et SVG, sans dépendance à Looker Studio ni à Flourish.</p></div></footer>
 <script type="module">
 import { stations } from "./trilib-data.mjs?v=1";
 const NS="http://www.w3.org/2000/svg";

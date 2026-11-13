@@ -1019,7 +1019,7 @@ for(const project of projects){project.tools??=confirmedTools[project.id]||[];pr
 
 export const featuredProjectIds = ['trilib','femmes-tech','happy-learning','nextstep','cauvaillac','zero-waste'];
 
-export function projectUrl(project){return `${project.url || `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`}?v=boucle-complete`;}
+export function projectUrl(project){return `${project.url || `/elfie-zoungrana-projets-experiences-numeriques/projets/${project.id}.html`}?v=mobile`;}
 
 export function normalize(value) {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('fr');
