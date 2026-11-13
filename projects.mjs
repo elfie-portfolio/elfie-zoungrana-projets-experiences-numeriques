@@ -1012,7 +1012,7 @@ export const projects = [
   }
 ];
 
-const order=['happy-learning','nextstep','trilib','femmes-tech','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
+const order=['trilib','femmes-tech','happy-learning','nextstep','penzi','licorne-party','wonderball','cauvaillac','moina-accessoires','zero-waste','paris8-communication','campagnes-conceptuelles','becomtech','elles-bougent'];
 projects.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
 const confirmedTools={nextstep:['Figma'],penzi:['Figma'],'zero-waste':['Canva','Google Workspace','My Maps','Slack'],wonderball:['Figma']};
 for(const project of projects){project.tools??=confirmedTools[project.id]||[];project.tags??=project.skills.slice(0,3);}
