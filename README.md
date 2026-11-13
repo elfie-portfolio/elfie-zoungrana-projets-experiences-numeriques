@@ -8,7 +8,7 @@ Portfolio d’Elfie Zoungrana : communication numérique, UX/UI design, projets 
 
 Ce dépôt contient le portfolio publié sur GitHub Pages. Il conserve les projets initiaux et intègre deux mini-projets de datavisualisation à partir de données publiques.
 
-- 18 pages HTML : 4 pages principales, 12 fiches de projets et 2 tableaux de bord data indépendants.
+- 20 pages HTML : 4 pages principales, 14 fiches de projets et 2 tableaux de bord data indépendants.
 - 62 images, 5 documents PDF et la vidéo Audi.
 - Les 4 polices locales, les 3 feuilles de styles du portfolio et les modules JavaScript pour la navigation, les projets et la carte Trilib’.
 - Navigation, recherche, filtres par domaine (dont « Data & visualisation »), dossiers interactifs, projet au hasard, thème jour/nuit et menu mobile.
@@ -33,7 +33,7 @@ Si le nom du dépôt ou l’hébergement change, ce chemin doit être adapté da
 ## Fichiers
 
 - `index.html`, `projets.html`, `parcours.html`, `a-propos.html` : pages principales.
-- `projets/` : les 12 fiches détaillées d’origine.
+- `projets/` : les 12 fiches d’origine et les 2 nouvelles fiches « Femmes & Tech » et « Où trier à Paris ? ».
 - `data/femmes-tech.html` : projet interactif « Femmes & Tech » (Insee et Eurostat).
 - `data/trilib.html` : projet « Où trier à Paris ? », carte SVG et filtres d’arrondissements.
 - `data/trilib-data.mjs` et `data/trilib-stations.csv` : extraction de 443 stations Trilib’ à partir des données ouvertes de la Ville de Paris.
