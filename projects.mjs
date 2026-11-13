@@ -122,14 +122,14 @@ export const projects = [
       intro: 'Dans le cadre du cours, nous avons proposé plusieurs façons de faire connaître NextStep selon les personnes à toucher. Ce sont des idées de lancement pour un projet fictif.',
       channels: [
         {title: 'LinkedIn', audience: 'Mentors & partenaires', text: 'Présenter le concept, partager des retours d’expérience et proposer des conseils sur les parcours dans le numérique.'},
-        {title: 'Instagram, TikTok & Snapchat', audience: 'Jeunes diplômées et diplômés', text: 'Imaginer des formats courts : conseils métiers, parcours inspirants et présentation des fonctionnalités.'},
+        {title: 'Instagram, TikTok & Snapchat', audience: 'Jeunes diplômées et diplômés', text: 'Imaginer des formats courts : conseils sur les métiers, parcours inspirants et présentation des fonctionnalités.'},
         {title: 'Écoles & structures du numérique', audience: 'Étudiantes, étudiants & personnes en formation', text: 'Proposer une présence dans les newsletters et des rencontres avec des universités, des organismes de formation ou des associations.'}
       ],
       phases: [
         {title: 'Un lancement progressif', text: 'Commencer avec un groupe limité, recueillir des retours, puis élargir la communication et encourager le bouche-à-oreille.'},
         {title: 'Une communauté à animer', text: 'Proposer des discussions, des événements en ligne et des témoignages des membres.'}
       ],
-      limit: 'Deux points seraient à vérifier avant un lancement : trouver des mentors disponibles et garder une communauté active. La formule gratuite et payante, comme l’accompagnement proposé, resterait à tester.'
+      limit: 'Deux points seraient à vérifier avant un lancement : trouver des mentors disponibles et garder une communauté active. Il resterait à tester l’offre gratuite, l’offre payante et l’accompagnement proposé.'
     },
     mediaNote: 'Les personas, profils et échanges présentés sont fictifs. Le logo et certains visuels de la maquette d’origine ont été générés avec ChatGPT.',
     resources: [
@@ -215,7 +215,7 @@ export const projects = [
       ],
       limit: 'Ces idées ont été proposées dans le cadre du cours. Il faudrait les tester avec les personnes concernées pour voir si elles répondent à leurs besoins et si elles donnent envie d’utiliser l’application.'
     },
-    mediaNote: 'Penzi est un projet fictif réalisé en cours. Les profils et les conversations sont inventés. La vérification des profils et les réglages de confidentialité sont montrés en exemple dans la maquette.',
+    mediaNote: 'Penzi est un projet fictif réalisé en cours. Les profils et les conversations sont inventés. La vérification des profils et les réglages de confidentialité sont présentés à titre d’exemple dans la maquette.',
     resources: [
       {label: 'Ouvrir la maquette Figma', info: 'Maquette mobile · 24 écrans', url: 'https://www.figma.com/design/prMxiXCzfgl0GIi1PFBky5/Penzi-%C2%B7-Maquette-mobile?m=auto&t=Jg5HgfEmUQtpWBUD-6', kind: 'figma'}
     ]
@@ -252,7 +252,7 @@ export const projects = [
       "Sensibilisation"
     ],
     "status": "Service civique · Communication & projets zéro déchet",
-    "context": "Un service civique de six mois, du 1er avril au 30 septembre, autour du zéro déchet et du zéro gaspillage. L’association fêtait ses 10 ans cette année-là. Dans un contexte de budgets plus serrés, la communication aidait à faire connaître ses actions, à encourager les soutiens et à annoncer les événements locaux.",
+    "context": "Un service civique de six mois, du 1er avril au 30 septembre, autour du zéro déchet et du zéro gaspillage. L’association fêtait ses 10 ans cette année-là. Dans un contexte de budgets plus serrés, la communication aidait à faire connaître ses actions, à mobiliser les soutiens et à annoncer les événements locaux.",
     "contribution": "Création de publications Instagram et LinkedIn, de visuels pour les 10 ans et de plusieurs propositions d’affiches pour la collecte au bassin de la Villette. Canva a servi à organiser les textes, les photos et les informations pratiques. Les missions comprenaient aussi la rédaction d’articles web, la prise de photos, les outils de sensibilisation, la coanimation de stands et d’ateliers, l’aide aux événements, la recherche de partenaires, les cartes et les tableaux de suivi.",
     "facts": [
       {
@@ -327,7 +327,7 @@ export const projects = [
       "items": [
         {
           "title": "Annoncer les 10 ans",
-          "text": "Le carrousel présente l’anniversaire, les actions menées et quelques chiffres de l’association. Le noir, le jaune et les titres très visibles donnent un style commun aux trois pages."
+          "text": "Le carrousel présente l’anniversaire, les actions menées et quelques chiffres de l’association. Le noir, le jaune et les titres bien visibles donnent une unité aux trois visuels."
         },
         {
           "title": "Faire connaître la collecte",
@@ -531,11 +531,11 @@ export const projects = [
     context: 'BECOMTECH aide les filles et les femmes à découvrir le numérique et à y trouver leur place. Mon parcours a commencé en 2022 à Poissy avec JUMP IN TECH, puis s’est poursuivi avec TOGETHER IN TECH, un programme pour les étudiantes du numérique. Ce parcours continue aujourd’hui au sein de la communauté des Ambassadrices.',
     contribution: 'Comme ambassadrice : interventions dans les établissements scolaires, forums et rencontres avec des professionnelles. Parmi les responsabilités prises, la coordination de l’équipe de préparation de la Fête des Ambassadrices et de la conférence « L’IA dans la vie des femmes : au-delà des clichés », puis l’animation de cette rencontre en ligne.',
     approach: [
-      'Découvrir le développement web, la communication digitale et les métiers du numérique avec JUMP IN TECH, puis poursuivre avec TOGETHER IN TECH.',
+      'Découvrir le développement web, la communication numérique et les métiers du secteur avec JUMP IN TECH, puis poursuivre avec TOGETHER IN TECH.',
       'Présenter l’association et ses programmes dans des forums, répondre aux questions et adapter mes explications aux personnes présentes.',
       'Animer les réunions, suivre le calendrier et rassembler les besoins en matériel pour la Fête des Ambassadrices.',
       'Choisir les sujets de la conférence sur l’IA, préparer les questions avec les intervenantes, organiser les prises de parole et animer la rencontre.',
-      'Participer aux supports de communication, dont des vidéos de vœux et des vidéos pour la campagne de taxe d’apprentissage.'
+      'Contribuer à la création de supports de communication, dont des vidéos de vœux et des vidéos pour la campagne de taxe d’apprentissage.'
     ],
     takeaway: 'Cet engagement m’a appris à organiser le travail d’une équipe et à prendre la parole avec plus d’assurance. Il m’a aussi donné envie de rendre les sujets tech plus faciles à comprendre et de montrer que les filles y ont toute leur place.',
     skills: ['Coordination de projet', 'Animation de réunions', 'Prise de parole', 'Communication', 'Organisation événementielle', 'Travail en équipe'],
@@ -547,7 +547,7 @@ export const projects = [
       items:[
         {title:'Une conférence sur l’IA',text:'Coordination du groupe, recherches, préparation des échanges avec les intervenantes et animation de « L’IA dans la vie des femmes : au-delà des clichés ». La conférence en ligne a réuni 54 personnes.'},
         {title:'La Fête des Ambassadrices',text:'Animation des réunions de l’équipe, suivi des besoins en matériel et du budget, partage des informations et préparation des listes et des badges.'},
-        {title:'Sensibilisations & forums',text:'Échanges avec des élèves et des étudiantes, présentation de JUMP IN TECH et TOGETHER IN TECH, réponses aux questions et rencontres avec des professionnelles de la tech.'}
+        {title:'Actions de sensibilisation & forums',text:'Échanges avec des élèves et des étudiantes, présentation de JUMP IN TECH et TOGETHER IN TECH, réponses aux questions et rencontres avec des professionnelles de la tech.'}
       ]
     },
     resources: [{label:'Découvrir les programmes BECOMTECH',info:'Site de l’association',url:'https://becomtech.fr/nos-programmes/',kind:'web'}]
@@ -615,7 +615,7 @@ export const projects = [
     "draft": false,
     "short": "Imaginer l’école de demain en équipe et remporter le 1er prix régional du Challenge InnovaTech.",
     "lead": "Une idée pour l’école de demain : apprendre à son rythme, prendre soin de soi et préparer son avenir.",
-    "context": "Nous avons imaginé Happy Learning au Challenge InnovaTech d’Elles Bougent, sur le thème de l’école de demain. Avec l’équipe Génération’Elles, nous avons cherché comment varier les façons d’apprendre, aider chaque élève et préparer son avenir. La finale régionale Île-de-France a eu lieu le 19 mars à l’École 42, à Paris.",
+    "context": "Nous avons imaginé Happy Learning au Challenge InnovaTech d’Elles Bougent, sur le thème de l’école de demain. Avec l’équipe Génération’Elles, nous avons cherché comment varier les façons d’apprendre, aider chaque élève et préparer son avenir. La finale régionale Île-de-France a eu lieu le 19 mars à l’école 42, à Paris.",
     "contribution": "Participation aux idées et à la création de Happy Learning avec l’équipe Génération’Elles. Un travail entre étudiantes et lycéennes, avec l’aide d’une marraine qui travaille dans la tech.",
     "approach": [
       "Partir des difficultés des élèves : le manque de motivation, la pression scolaire, les inégalités et les questions d’orientation.",
@@ -900,7 +900,7 @@ export const projects = [
       'Chercher et vérifier les informations, préparer les questions et faire les interviews.',
       'Préparer les articles pour Intra8, le site et les autres supports : sujet, titre, introduction et sous-titres, puis relire et corriger avec l’équipe.',
       'Ajouter et mettre à jour les textes et les images sur le site avec la webmaster, en vérifiant l’affichage et l’accessibilité.',
-      'Suivre chaque semaine les articles de presse avec LuQi/Cision et préparer une revue de presse à faire valider.',
+      'Suivre chaque semaine les articles de presse avec LuQi / Cision et préparer une revue de presse à faire valider.',
       'Préparer les panneaux de la fête des personnels : noms des activités, illustrations, couleurs et mise en page, puis vérifier les supports avant impression.'
     ],
     takeaway:'Ce stage m’a appris à adapter les textes au support et à travailler avec une équipe jusqu’à la publication. L’ajout de contenus sur le site a aussi permis de mieux comprendre le lien entre rédaction, affichage et accessibilité.',
@@ -909,7 +909,7 @@ export const projects = [
     facts:[{label:'Période',value:'26 mai–25 juillet 2025'},{label:'Structure',value:'Université Paris 8 · Service communication'},{label:'Statut',value:'Stage · Rédactrice en communication'}],
     deliverables:'Des articles, des brèves et des portraits pour Intra8 et le site, des pages web ajoutées ou mises à jour, une revue de presse et des panneaux pour identifier les stands de la fête des personnels.',
     image:'/elfie-zoungrana-projets-experiences-numeriques/assets/paris8/intra8-portrait.webp',imageWidth:1800,imageHeight:1273,imageAlt:'Double page 16–17 du journal Intra8 de juillet 2025, avec le portrait de Mélissa Boros rédigé pendant le stage.',
-    caption:'Portrait de Mélissa Boros, Intra8 n°58, juillet 2025, p. 16–17. Texte rédigé pendant mon stage ; mise en page et publication par le service communication.',
+    caption:'Portrait de Mélissa Boros, Intra8 n° 58, juillet 2025, p. 16–17. Texte rédigé pendant mon stage ; mise en page et publication par le service communication.',
     galleries:[
       {
         id:'articles-intra8',navLabel:'Articles · Intra8',galleryLayout:'editorial',
@@ -945,7 +945,7 @@ export const projects = [
     ],
     takeaway:'Ces expériences me donnent envie d’en découvrir davantage sur la tech et de soutenir la place des filles dans ces métiers. Elles me permettent aussi de travailler en équipe et de rencontrer des femmes aux parcours variés.',
     skills:['Travail en équipe','Recherche d’idées','Présentation de projet','Échanges professionnels','Sensibilisation à la mixité'],tools:[],
-    deliverables:'Participation à des forums et aux deux formats du Challenge InnovaTech. Avec Happy Learning, l’équipe Génération’Elles a remporté le 1er prix régional Île-de-France.',
+    deliverables:'Participation à des forums et aux deux formats du Challenge InnovaTech. Avec Happy Learning, l’équipe Génération’Elles a remporté le 1er prix régional en Île-de-France.',
     resources:[{label:'Découvrir Happy Learning',info:'Projet collectif primé · Île-de-France',url:'/elfie-zoungrana-projets-experiences-numeriques/projets/happy-learning.html',kind:'web'},{label:'Découvrir Elles bougent',info:'Site de l’association',url:'https://www.ellesbougent.com/',kind:'web'},{label:'Les programmes et le Challenge Collège',info:'Présentation des programmes',url:'https://www.ellesbougent.com/actions/programmes/',kind:'web'}]
   },
   {
