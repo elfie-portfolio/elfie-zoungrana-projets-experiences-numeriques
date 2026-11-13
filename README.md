@@ -1,17 +1,17 @@
 # Elfie Zoungrana — Projets & expériences numériques
 
-Portfolio d’Elfie Zoungrana : communication numérique, UX/UI design, projets web et engagements associatifs.
+Portfolio d’Elfie Zoungrana : communication numérique, UX/UI design, projets web, datavisualisation et engagements associatifs.
 
 [Ouvrir le portfolio](https://elfie-portfolio.github.io/elfie-zoungrana-projets-experiences-numeriques/)
 
 ## Version complète
 
-Cette version reprend les pages, les contenus, les styles et les interactions du portfolio publié sur `elfie-lab-portfolio`.
+Ce dépôt contient le portfolio publié sur GitHub Pages. Il conserve les projets initiaux et intègre deux mini-projets de datavisualisation à partir de données publiques.
 
-- 16 pages, dont les 12 fiches de projets.
+- 18 pages HTML : 4 pages principales, 12 fiches de projets et 2 tableaux de bord data indépendants.
 - 62 images, 5 documents PDF et la vidéo Audi.
-- Les 4 polices locales, les 3 feuilles de styles et les 2 modules JavaScript.
-- Navigation, recherche, filtres, dossiers interactifs, projet au hasard, thème jour/nuit et menu mobile.
+- Les 4 polices locales, les 3 feuilles de styles du portfolio et les modules JavaScript pour la navigation, les projets et la carte Trilib’.
+- Navigation, recherche, filtres par domaine (dont « Data & visualisation »), dossiers interactifs, projet au hasard, thème jour/nuit et menu mobile.
 - Liens vers les maquettes Figma, Canva et les autres ressources conservés.
 
 Les médias sont stockés dans le dépôt. Les fichiers binaires sont identiques aux fichiers publiés d’origine.
@@ -33,9 +33,12 @@ Si le nom du dépôt ou l’hébergement change, ce chemin doit être adapté da
 ## Fichiers
 
 - `index.html`, `projets.html`, `parcours.html`, `a-propos.html` : pages principales.
-- `projets/` : les 12 fiches détaillées.
+- `projets/` : les 12 fiches détaillées d’origine.
+- `data/femmes-tech.html` : projet interactif « Femmes & Tech » (Insee et Eurostat).
+- `data/trilib.html` : projet « Où trier à Paris ? », carte SVG et filtres d’arrondissements.
+- `data/trilib-data.mjs` et `data/trilib-stations.csv` : extraction de 443 stations Trilib’ à partir des données ouvertes de la Ville de Paris.
 - `assets/` : images, documents, vidéo et polices.
-- `projects.mjs` : données et liens des projets.
+- `projects.mjs` : données, catégories et liens des 14 projets.
 - `app.mjs` : interactions du portfolio.
 - `styles.css`, `pages.css`, `portfolio.css` : styles d’origine.
 - `.migration/report.json` : inventaire des fichiers importés et empreintes de contrôle.
