@@ -27,11 +27,20 @@ footer{padding:24px 0 45px;border-top:1px solid var(--line);font-size:11px;color
 @media(max-width:880px){.dashboard,.bottom{grid-template-columns:1fr}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.bar-list{max-height:none;grid-template-columns:repeat(2,minmax(0,1fr))}.bar-row{grid-template-columns:34px minmax(0,1fr) 24px}.hero{align-items:flex-start}}
 @media(max-width:520px){.wrap{padding:0 14px}.hero h1{font-size:43px}.summary{gap:8px}.stat{padding:13px}.stat strong{font-size:29px}.stat span{font-size:11px}.bar-list{grid-template-columns:1fr}.panel-head{padding:17px}.map-stage{margin:3px 8px 10px}.controls{padding:12px}.chips{gap:6px}.chip{padding:8px 10px}.map-stage svg{min-height:280px}.legend{gap:9px;padding-inline:12px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-</style>
+
+/* Menu partagé avec le portfolio */
+nav{flex-wrap:wrap}
+.nav-links{display:flex;align-items:center;gap:15px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.nav-links a:not(.back){text-decoration:none;color:var(--ink)}
+.nav-links a[aria-current="page"]{color:var(--green);font-weight:750}
+.nav-links a:hover{text-decoration:underline}
+@media(max-width:740px){nav{gap:9px;padding:13px 0}.nav-links{width:100%;justify-content:flex-start;gap:8px 12px;font-size:12px}.back{padding:7px 10px}}
+.skip-dashboard{position:absolute;left:-9999px;top:0;z-index:50;background:white;padding:10px;color:var(--ink)}.skip-dashboard:focus{left:10px}</style>
 </head>
 <body>
-<header><div class="wrap"><nav><a class="brand" href="../index.html" aria-label="Retour à l'accueil du portfolio">elfie<span>.z</span></a><a class="back" href="../projets.html?categorie=data">← Mes projets · Data & visualisation</a></nav></div></header>
-<main class="wrap">
+<a class="skip-dashboard" href="#contenu">Aller au contenu</a>
+<header><div class="wrap"><nav aria-label="Navigation principale"><a class="brand" href="../index.html" aria-label="Accueil du portfolio">elfie<span>.z</span></a><div class="nav-links"><a href="../projets.html" aria-current="page">Mes projets <strong>14</strong></a><a href="../parcours.html">Mon parcours</a><a href="../a-propos.html">À propos</a><a class="back" href="../projets.html?categorie=data">← Data &amp; visualisation</a></div></nav></div></header>
+<main class="wrap" id="contenu">
 <div class="hero">
  <div><p class="eyebrow">Mini-projet personnel · Données publiques · Paris</p><h1>Où trier <em>à Paris ?</em></h1><p>Explorer les stations Trilib’ recensées comme étant en service dans les vingt arrondissements. Une carte de points, un classement interactif et un focus sur les 6e et 19e arrondissements.</p></div>
  <div class="project-stamp">DATA STORY / CARTOGRAPHIE / HTML · CSS · JS</div>
@@ -76,7 +85,7 @@ footer{padding:24px 0 45px;border-top:1px solid var(--line);font-size:11px;color
  </section>
 </div>
 </main>
-<footer><div class="wrap"><p><strong>Source des données :</strong> <a href="https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/" target="_blank" rel="noopener noreferrer">Ville de Paris — Stations Trilib’ (Paris Data)</a>, Licence Ouverte (Etalab). Données préparées dans Google Sheets puis intégrées comme une extraction statique de 443 stations signalées en service. Une ligne par identifiant de station.</p><p><strong>Réalisation :</strong> projet personnel d’Elfie Zoungrana · Visualisations conçues avec HTML, CSS, JavaScript et SVG, sans dépendance à Looker Studio ni à Flourish.</p></div></footer>
+<footer><div class="wrap"><p><a href="./femmes-tech.html">Découvrir aussi « Femmes &amp; Tech » →</a></p><p><strong>Source des données :</strong> <a href="https://opendata.paris.fr/explore/dataset/dechets-menagers-points-dapport-volontaire-stations-trilib/" target="_blank" rel="noopener noreferrer">Ville de Paris — Stations Trilib’ (Paris Data)</a>, Licence Ouverte (Etalab). Données préparées dans Google Sheets puis intégrées comme une extraction statique de 443 stations signalées en service. Une ligne par identifiant de station.</p><p><strong>Réalisation :</strong> projet personnel d’Elfie Zoungrana · Visualisations conçues avec HTML, CSS, JavaScript et SVG, sans dépendance à Looker Studio ni à Flourish.</p></div></footer>
 <script type="module">
 import { stations } from "./trilib-data.mjs?v=1";
 const NS="http://www.w3.org/2000/svg";
